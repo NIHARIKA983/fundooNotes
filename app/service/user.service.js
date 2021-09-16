@@ -1,11 +1,13 @@
 const userModel = require('../models/user.model.js')
+const bcrypt = require('bcryptjs');
+
 class userService {
     registerUser = (user, callback) => {
         userModel.registerUser(user, (err, data) => {
             if (err) {
-                callback(err, null);
+               return callback(err, null);
             } else {
-                callback(null, data);
+               return callback(null, data);
             }
         });
     }; 
