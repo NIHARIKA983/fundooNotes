@@ -38,9 +38,9 @@ class userModel {
             password: userDetails.password,
         });
         try {
-            user.findOne({ email: userDetails.email }, (err, data) => {
-                if (data) {
-                    return callback('User already exist', null)
+            newUser.save((error,data) => {
+                if (error) {
+                    return callback(error, null)
                 }
                 else {
                     bcrypt.genSalt(saltRounds, function (err, salt) {
