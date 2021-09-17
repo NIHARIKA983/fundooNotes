@@ -11,5 +11,25 @@ class userService {
             }
         });
     }; 
+
+    loginUser = (loginInfo, callback) => {
+        userModel.loginUser(loginInfo, (err, data) => {
+            if (data) {
+                bcrypt.compare(loginInfo.password,data.password,(error,validate) => {
+                
+                    if (error)
+                     {
+                        callback('Invalid Password', null);
+                    }
+                    else
+                     {
+                        callback(null, data);
+                    }                 
+                });
+            } else {
+                callback('Please check your email id and password');
+            }
+        });
+    }
 }
 module.exports = new userService(); 
