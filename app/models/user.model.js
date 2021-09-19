@@ -73,8 +73,9 @@ class userModel {
                 return callBack(error, null);
             } else if (!data) {
                 return callBack("Invalid Credentials", null);
-            } else
+            } else{
                 return callBack(null, data);
+            }
         });
     }
 }

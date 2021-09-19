@@ -60,7 +60,7 @@ class Controller {
                   data: loginValidation
                 });           
             }
-            userService.loginUser(loginInfo, (error, data) => {
+            userService.loginUser(loginInfo, (error, token) => {
                 if (error) {
                     return res.status(400).json({
                         success: false,
@@ -71,7 +71,7 @@ class Controller {
                     return res.status(200).json({
                         success: true,
                         message: "User successfully logged In",
-                        data,
+                        token,
                     
                     });    
                 }          
