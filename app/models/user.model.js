@@ -38,12 +38,7 @@ class userModel {
             password: userDetails.password,
         });
         try {
-            newUser.save((error,data) => {
-                if (error) {
-                    return callback(error, null)
-                }
-                else {
-                    bcrypt.genSalt(saltRounds, function (err, salt) {
+             bcrypt.genSalt(saltRounds, function (err, salt) {
                         if (err) {
                             throw err;
                         }
@@ -59,9 +54,7 @@ class userModel {
                             })
                         }
                     })
-                }
-            })
-        }
+         }
         catch (error) {
             return callback('Internal Error', null)
         }

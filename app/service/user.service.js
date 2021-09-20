@@ -27,7 +27,6 @@ class userService {
                     else
                      {
                         const token=jwt.sign({
-                            id:data._id,
                             username:data.firstName
                         },JWT_SECRET)
                         return callback(null, token);

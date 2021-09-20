@@ -7,10 +7,10 @@ const port = process.env.PORT;
 const app = express();
 
 // parse requests of content-type - application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }))
+ app.use(bodyParser.urlencoded({ extended: true }))
 
 // parse requests of content-type - application/json
-app.use(bodyParser.json())
+ app.use(bodyParser.json())
 
 // Configuring the database
 const dbConfig = require('./config/database.config.js');
