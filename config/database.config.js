@@ -1,7 +1,3 @@
-// module.exports = {
-//     url: 'mongodb://localhost:27017/fundoo-notes'
-// }
-
 const mongoose = require('mongoose')
 const url = process.env.URL;
 

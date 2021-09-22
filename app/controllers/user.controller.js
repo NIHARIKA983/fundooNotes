@@ -1,5 +1,6 @@
-const userService = require('../service/user.service.js')
-const validation = require('../utilities/validation.js')
+const userService = require('../service/user.service.js');
+const validation = require('../utilities/validation.js');
+
 
 class Controller {
     register = (req, res) => {
@@ -8,10 +9,10 @@ class Controller {
                 firstName: req.body.firstName,
                 lastName: req.body.lastName,
                 email: req.body.email,
-                password: req.body.password
+                password: req.body.password,
             };
 
-            const registerValidation = validation.authRegister.validate(user)
+            const registerValidation = validation.authRegister.validate(user);
 
             if (registerValidation.error) {
                 console.log(registerValidation.error)
@@ -19,7 +20,8 @@ class Controller {
                   success: false,
                   message: 'Wrong Input Validations',
                   data: registerValidation
-                });           
+                }); 
+                        
             }
 
                 userService.registerUser(user, (error, data) => {
@@ -28,7 +30,7 @@ class Controller {
                             success: false,
                             message: 'User already exist',
                         });
-                    } else {
+                    } else{
                         return res.status(200).json({
                             success: true, 
                             message: "User Registered",
@@ -42,7 +44,7 @@ class Controller {
                 data: null,
             });
         }
-    }
+    } 
 
     login = (req, res) => {
         try {
@@ -60,7 +62,7 @@ class Controller {
                   data: loginValidation
                 });           
             }
-            userService.loginUser(loginInfo, (error, token) => {
+            userService.loginUser(loginInfo, (error, data) => {
                 if (error) {
                     return res.status(400).json({
                         success: false,
@@ -71,7 +73,7 @@ class Controller {
                     return res.status(200).json({
                         success: true,
                         message: "User successfully logged In",
-                        token,
+                        token:data,
                     
                     });    
                 }          
@@ -81,6 +83,7 @@ class Controller {
                 success: false,
                 message: 'Internal server error',
                 data,
+                
             });
         }
     }

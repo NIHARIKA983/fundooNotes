@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
-const saltRounds = 10;
+const utilities = require("../utilities/helper.js");
 
 const userSchema = mongoose.Schema({
     firstName: {
@@ -38,27 +38,19 @@ class userModel {
             password: userDetails.password,
         });
         try {
-             bcrypt.genSalt(saltRounds, function (err, salt) {
-                        if (err) {
-                            throw err;
-                        }
-                        else {
-                            bcrypt.hash(userDetails.password, salt, function (err, hash) {
-                                if (err) {
-                                    throw err;
-                                } else {
-                                    newUser.password = hash;
-                                    newUser.save();
-                                    return callback(null, newUser);
-                                }
-                            })
-                        }
-                    })
-         }
-        catch (error) {
-            return callback('Internal Error', null)
-        }
-    }
+            utilities.hashing(userDetails.password, (error, hash) => {
+              if (hash) {
+                newUser.password = hash;
+                newUser.save();
+                return callback(null, newUser);
+              } else {
+                throw err;
+              }
+            });
+          } catch (error) {
+            return callback("Internal error", null);
+          }
+        };
 
     loginUser = (loginData, callBack) => {
         user.findOne({ email: loginData.email }, (error, data) => {
