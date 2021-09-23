@@ -1,3 +1,10 @@
+/**
+ * @module       Models
+ * @file         user.model.js
+ * @description Taking the request from the client and gives the response
+ * @author       Niharika
+ */
+
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const utilities = require("../utilities/helper.js");
@@ -28,6 +35,11 @@ const userSchema = mongoose.Schema({
 const user = mongoose.model('user', userSchema);
 
 class userModel {
+    /**
+     * @description register user in the database
+     * @param user
+     * @param callback 
+     */
 
     registerUser = (userDetails,callback) => {
 
@@ -51,6 +63,12 @@ class userModel {
             return callback("Internal error", null);
           }
         };
+        
+    /**
+     * @description login user from the database
+     * @param loginData 
+     * @param callback for service
+     */
 
     loginUser = (loginData, callBack) => {
         user.findOne({ email: loginData.email }, (error, data) => {
