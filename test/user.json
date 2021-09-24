@@ -1,0 +1,23 @@
+{
+    "user": {
+        "registration": {
+            "firstName": "Rekha",
+            "lastName": "An",
+            "email": "rekha@gmail.com",
+            "password": "rekha12$&"
+        },
+        "registrationWithImproperDetails": {
+            "firstName": "Srinivas",
+            "email": "srinivas@gmail.com",
+            "password": "srinivas$123#"
+        },
+        "login": {
+            "email": "arpitha8@gmail.com",
+            "password": "arpitha11@@"
+        },
+        "loginWithImproperDetails": {
+            "email": "akash123@gmail.com",
+            "password": "akash12"
+        }
+    }
+}

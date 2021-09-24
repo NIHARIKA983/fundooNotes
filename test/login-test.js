@@ -1,39 +1,29 @@
-const connection = require("../server");
-const chai = require("chai");
-const chaiHttp = require("chai-http");
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const server = require('../server');
+
+chai.use(chaiHttp);
+const loginData = require('./user.json');
 
 chai.should();
-chai.use(chaiHttp);
 
-describe("Login API", () => {
-  it("givenLoginDetails when Proper should able to login", (done) => {
-    let loginDetails = {
-      email: "arpitha8@gmail.com",
-      password: "arpitha11@@",
-    };
-
+describe('login', () => {
+  it('givenLoginDetails_whenProper_shouldAbleToLogin', (done) => {
+    const loginDetails = loginData.user.login;
     chai
-      .request(connection)
-      .post("/login")
+      .request(server)
+      .post('/login')
       .send(loginDetails)
       .end((err, res) => {
         res.should.have.status(200);
         done();
       });
   });
-});
-
-
-describe("Login API", () => {
-  it("givenLoginDetails when Improper should unable to login", (done) => {
-    let loginDetails = {
-      email: "ar@gmail.com",
-      password: "arpitha11@",
-    };
-
+  it('givenLoginDetails_whenImproper_shouldUnableToLogin', (done) => {
+    const loginDetails = loginData.user.loginWithImproperDetails;
     chai
-      .request(connection)
-      .post("/login")
+      .request(server)
+      .post('/login')
       .send(loginDetails)
       .end((err, res) => {
         res.should.have.status(400);
