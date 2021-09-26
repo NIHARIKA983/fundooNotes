@@ -15,6 +15,9 @@ describe('registartion', () => {
       .post('/register')
       .send(registartionDetails)
       .end((err, res) => {
+        if (err) {
+          return done(err);
+        }
         res.should.have.status(200);
         done();
       });
@@ -26,9 +29,11 @@ describe('registartion', () => {
       .post('/register')
       .send(registartionDetails)
       .end((err, res) => {
+        if (err) {
+          return done(err);
+        }
         res.should.have.status(400);
         done();
       });
   });
 });
-

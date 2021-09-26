@@ -5,14 +5,11 @@
  * @author       Niharika
  */
 
- 
 const controller = require('../controllers/user.controller.js');
 
-module.exports=(app) => {
-    
-    //api for registration
-    app.post('/register',controller.register);
-
-    //api for login
-    app.post('/login',controller.login)
-} 
+module.exports = (app) => {
+  // api for registration
+  app.post('/register', controller.register);
+  // api for login
+  app.post('/login', controller.login);
+};

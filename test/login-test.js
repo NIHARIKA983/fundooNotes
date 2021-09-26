@@ -15,6 +15,9 @@ describe('login', () => {
       .post('/login')
       .send(loginDetails)
       .end((err, res) => {
+        if (err) {
+          return done(err);
+        }
         res.should.have.status(200);
         done();
       });
@@ -26,6 +29,9 @@ describe('login', () => {
       .post('/login')
       .send(loginDetails)
       .end((err, res) => {
+        if (err) {
+          return done(err);
+        }
         res.should.have.status(400);
         done();
       });
