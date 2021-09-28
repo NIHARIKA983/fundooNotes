@@ -8,6 +8,7 @@
 const userModel = require('../models/user.model.js');
 const bcrypt = require('bcryptjs');
 const utilities = require('../utilities/helper.js');
+const { logger } = require('../../logger/logger');
 
 class UserService {
   /**
@@ -37,6 +38,7 @@ class UserService {
           const check = bcrypt.compare(loginInfo.password, data.password);
 
           if (check === false) {
+            logger.info('Valid Password');
             return callback('invalid Password', null);
           } else {
             utilities.token(loginInfo, (error, token) => {
@@ -48,6 +50,7 @@ class UserService {
             });
           }
         } else {
+          logger.error('Password does not match');
           return callback('Please check your email and password ');
         }
       });

@@ -7,8 +7,8 @@
  */
 
 const mongoose = require('mongoose');
-// const bcrypt = require('bcryptjs');
 const utilities = require('../utilities/helper.js');
+const { logger } = require('../../logger/logger');
 
 const userSchema = mongoose.Schema({
   firstName: {
@@ -60,6 +60,7 @@ class UserModel {
           }
         });
       } catch (error) {
+        logger.error('Find error in model');
         return callback('Internal error', null);
       }
     };
@@ -73,10 +74,13 @@ class UserModel {
     loginUser = (loginData, callBack) => {
       User.findOne({ email: loginData.email }, (error, data) => {
         if (error) {
+          logger.error('Find error while loggin user');
           return callBack(error, null);
         } else if (!data) {
+          logger.error('Invalid User');
           return callBack('Invalid Credentials', null);
         } else {
+          logger.info('Email id found');
           return callBack(null, data);
         }
       });

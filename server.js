@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger/swagger.json');
+const { logger } = require('./logger/logger');
 
 const port = process.env.PORT;
 // create express app
@@ -35,6 +36,8 @@ require('./app/routes/user.routes.js')(app);
 // listen for requests
 app.listen(port, () => {
   console.log('Server is listening on port 3000');
+  logger.info(`Server is listening on port : ${process.env.PORT}`);
+  logger.error(' Something is wrong ');
 });
 
 module.exports = app;
