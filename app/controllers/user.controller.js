@@ -36,7 +36,7 @@ class Controller {
 
         userService.registerUser(user, (error, data) => {
           if (error) {
-            return res.status(400).json({
+            return res.status(409).json({
               success: false,
               message: 'User already exist'
             });

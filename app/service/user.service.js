@@ -19,9 +19,9 @@ class UserService {
     registerUser = (user, callback) => {
       userModel.registerUser(user, (err, data) => {
         if (err) {
-          return callback(err, null);
+          callback(err, null);
         } else {
-          return callback(null, data);
+          callback(null, data);
         }
       });
     };
