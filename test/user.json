@@ -11,6 +11,22 @@
             "email": "srinivas@gmail.com",
             "password": "srinivas$123#"
         },
+        "registrationWithImproperValidation": {
+            "firstName": "srinivas",
+            "lastName": "An",
+            "email": "srinivas@gmail.com",
+            "password": "srinivas$123"
+        },
+        "registrationWithOutEmail": {
+            "firstName": "srinivas",
+            "lastName": "An",
+            "password": "srinivas$123"
+        },
+        "registrationWithOutfirstName": {
+            "lastName": "An",
+            "email": "srinivas@gmail.com",
+            "password": "srinivas$123"
+        },
         "login": {
             "email": "arpitha8@gmail.com",
             "password": "arpitha11@@"
@@ -18,6 +34,14 @@
         "loginWithImproperDetails": {
             "email": "akash123@gmail.com",
             "password": "akash12"
+        },
+        "loginWithImproperPassword": {
+            "email": "akash123@gmail.com",
+            "password": "akash12"
+        },
+        "loginWithImproperEmail": {
+            "email": "ak",
+            "password": "akash12$&"
         }
     }
 }
