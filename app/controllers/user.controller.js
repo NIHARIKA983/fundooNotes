@@ -6,6 +6,7 @@
 const userService = require('../service/user.service.js');
 const validation = require('../utilities/validation.js');
 const { logger } = require('../../logger/logger');
+require('dotenv').config();
 
 class Controller {
   /**
@@ -101,6 +102,43 @@ class Controller {
           success: false,
           message: 'Internal server error'
 
+        });
+      }
+    }
+
+    /**
+     * description controller function for forgot password
+     * @param {*} req
+     * @param {*} res
+     * @returns
+     */
+
+    forgotPassword = (req, res) => {
+      try {
+        const userCredential = {
+          email: req.body.email
+        };
+        userService.forgotPassword(userCredential, (error, result) => {
+          if (error) {
+            return res.status(400).send({
+              success: false,
+              message: 'failed to send email',
+              error
+            });
+          } else {
+            return res.status(200).send({
+              success: true,
+              message: 'Email sent successfully',
+              result
+            });
+          }
+        });
+      } catch (error) {
+        logger.error('Internal server error');
+        return res.status(500).send({
+          success: false,
+          message: 'Internal server error',
+          result: null
         });
       }
     }

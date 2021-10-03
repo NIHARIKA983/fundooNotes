@@ -25,3 +25,114 @@
 {"level":"error","message":" Something is wrong ","timestamp":"2021-09-29T15:35:44.908Z"}
 {"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-09-29T15:35:45.009Z"}
 {"level":"info","message":"Email id found","timestamp":"2021-09-29T15:35:45.939Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-09-29T15:45:38.025Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-09-29T15:45:38.030Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-09-29T15:45:38.149Z"}
+{"level":"info","message":"User registered","timestamp":"2021-09-29T15:46:53.638Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-09-30T03:42:14.022Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-09-30T03:42:14.066Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-09-30T03:42:19.941Z"}
+{"level":"info","message":"User registered","timestamp":"2021-09-30T03:43:43.157Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-09-30T15:10:59.341Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-09-30T15:10:59.412Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-09-30T15:11:01.229Z"}
+{"code":"EAUTH","command":"AUTH PLAIN","level":"error","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials o16sm3420193pgv.29 - gsmtp","responseCode":535,"timestamp":"2021-09-30T15:18:15.546Z"}
+{"code":"EAUTH","command":"AUTH PLAIN","level":"error","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials c22sm3046750pja.10 - gsmtp","responseCode":535,"timestamp":"2021-09-30T15:32:08.232Z"}
+{"code":"EAUTH","command":"AUTH PLAIN","level":"error","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials b20sm3512028pfp.26 - gsmtp","responseCode":535,"timestamp":"2021-09-30T15:34:44.329Z"}
+{"code":"EAUTH","command":"AUTH PLAIN","level":"error","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials z8sm3492890pgc.53 - gsmtp","responseCode":535,"timestamp":"2021-09-30T15:36:15.651Z"}
+{"code":"EAUTH","command":"AUTH PLAIN","level":"error","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials e19sm3417920pfd.109 - gsmtp","responseCode":535,"timestamp":"2021-09-30T15:44:42.325Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-01T02:38:20.996Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-01T02:38:20.999Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-01T02:38:21.882Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-02T14:29:45.771Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-02T14:29:46.248Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-02T14:29:47.296Z"}
+{"level":"info","message":"User registered","timestamp":"2021-10-02T14:33:39.895Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-10-02T14:34:41.720Z"}
+{"code":"EAUTH","command":"AUTH PLAIN","level":"error","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials h13sm9028169pgf.14 - gsmtp","responseCode":535,"timestamp":"2021-10-02T14:36:44.271Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-02T14:41:57.142Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-02T14:41:57.147Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-02T14:41:57.281Z"}
+{"code":"EAUTH","command":"AUTH PLAIN","level":"error","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials o14sm9390992pfh.145 - gsmtp","responseCode":535,"timestamp":"2021-10-02T14:42:09.717Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-02T14:50:02.562Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-02T14:50:02.567Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-02T14:50:02.673Z"}
+{"code":"EAUTH","command":"AUTH PLAIN","level":"error","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 18sm9237764pfi.60 - gsmtp","responseCode":535,"timestamp":"2021-10-02T14:50:52.451Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-02T17:59:14.298Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-02T17:59:14.311Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-02T17:59:15.245Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:03:58.014Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:03:58.031Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-02T18:06:11.308Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-02T18:06:11.318Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-02T18:06:11.593Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:06:55.883Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:06:55.975Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:07:09.461Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:07:09.467Z"}
+{"level":"error","message":null,"timestamp":"2021-10-02T18:07:49.101Z"}
+{"level":"error","message":null,"timestamp":"2021-10-02T18:22:40.237Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-02T18:27:09.616Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-02T18:27:09.620Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-02T18:27:09.694Z"}
+{"level":"error","message":null,"timestamp":"2021-10-02T18:27:24.934Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:27:58.993Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:27:58.996Z"}
+{"level":"info","message":"User registered","timestamp":"2021-10-02T18:33:55.517Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-10-02T18:34:12.453Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:34:48.564Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:34:48.566Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:35:27.946Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:35:27.948Z"}
+{"level":"error","message":null,"timestamp":"2021-10-02T18:39:12.867Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:43:37.040Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:43:37.042Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:44:48.960Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T18:44:48.962Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-10-02T19:00:41.915Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T19:01:07.084Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T19:01:07.087Z"}
+{"level":"error","message":null,"timestamp":"2021-10-02T19:05:15.730Z"}
+{"level":"info","message":"User registered","timestamp":"2021-10-02T19:05:46.367Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-10-02T19:06:09.300Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T19:06:41.079Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T19:06:41.081Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T19:07:32.913Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T19:07:32.915Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-02T19:12:26.093Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-02T19:12:26.097Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-02T19:12:26.539Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T19:12:37.358Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T19:12:37.363Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T19:13:00.243Z"}
+{"level":"error","message":"User with email id doesnt exists","timestamp":"2021-10-02T19:13:00.245Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-02T19:21:28.461Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-02T19:21:28.467Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-02T19:21:28.555Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-02T19:30:06.407Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-02T19:30:06.410Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-02T19:30:06.476Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-02T19:51:50.397Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-02T19:51:50.404Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-02T19:51:50.556Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-03T15:13:48.820Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-03T15:13:48.823Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-03T15:13:49.248Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-03T15:18:49.312Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-03T15:18:49.317Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-03T15:18:49.617Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-03T15:20:55.717Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-03T15:20:55.721Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-03T15:20:55.834Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-03T15:25:42.825Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-03T15:25:42.830Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-03T15:25:42.954Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-03T15:27:15.664Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-03T15:27:15.667Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-03T15:27:15.770Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-03T15:44:05.840Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-03T15:44:05.845Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-03T15:44:05.940Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-03T15:58:20.492Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-03T15:58:20.495Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-03T15:58:20.575Z"}
