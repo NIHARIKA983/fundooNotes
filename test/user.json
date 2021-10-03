@@ -42,6 +42,12 @@
         "loginWithImproperEmail": {
             "email": "ak",
             "password": "akash12$&"
+        },
+        "userForgotPasswordPos": {
+            "email": "niharikagowda1996@gmail.com"
+        },
+        "userForgotPasswordNegNonRegistered": {
+            "email": "akansha@gmail.com"
         }
     }
 }
