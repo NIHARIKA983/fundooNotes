@@ -75,6 +75,7 @@
             }
         }
     },
+    
 
     "definitions": {
         "registerUser": {
@@ -107,5 +108,6 @@
                 }
             }
         }
+        
     }
 } 
