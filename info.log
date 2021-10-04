@@ -229,3 +229,7 @@
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-04T07:49:54.077Z"}
 {"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-04T07:49:54.183Z"}
 {"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":1019,"level":"info","messageId":"<d6f66292-c854-be72-de1f-88ad758d2c49@gmail.com>","messageSize":1007,"messageTime":1263,"rejected":[],"response":"250 2.0.0 OK  1633333802 h8sm3292624pjz.43 - gsmtp","timestamp":"2021-10-04T07:50:02.479Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-04T07:57:18.653Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-04T07:57:18.656Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-04T07:57:18.751Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":1446,"level":"info","messageId":"<1a84936e-fe95-8de7-f043-8fa9c292fb2e@gmail.com>","messageSize":1007,"messageTime":815,"rejected":[],"response":"250 2.0.0 OK  1633334275 d14sm13341208pfq.61 - gsmtp","timestamp":"2021-10-04T07:57:55.288Z"}
