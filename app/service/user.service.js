@@ -58,7 +58,7 @@ class UserService {
 
   forgotPassword = (email, callback) => {
     userModel.forgotPassword(email, (error, data) => {
-      if (error || !data) {
+      if (error) {
         logger.error(error);
         return callback(error, null);
       } else {

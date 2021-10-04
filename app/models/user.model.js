@@ -99,7 +99,7 @@ class UserModel {
      */
      forgotPassword = (data, callback) => {
        User.findOne({ email: data.email }, (err, data) => {
-         if (err || !data) {
+         if (err) {
            logger.error('User with email id doesnt exists');
            return callback('User with email id doesnt exists', null);
          } else {
