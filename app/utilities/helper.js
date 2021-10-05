@@ -25,8 +25,18 @@ class Helper {
       lastName: data.lastName,
       email: data.email
     };
-    return jwt.sign({ dataForToken }, process.env.JWT_SECRET, { expiresIn: '1H' });
+    return jwt.sign({ dataForToken }, process.env.JWT_SECRET);
   }
+
+  getEmailFromToken (token, callback) {
+    jwt.verify(token, process.env.JWT_SECRET, (error, data) => {
+      if (error) {
+        return callback(error, null);
+      } else {
+        return callback(null, data);
+      }
+    });
+  };
 }
 
 module.exports = new Helper();

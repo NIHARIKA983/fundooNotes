@@ -10,6 +10,7 @@ const bcrypt = require('bcryptjs');
 const utilities = require('../utilities/helper.js');
 const { logger } = require('../../logger/logger');
 const nodemailer = require('../Utilities/nodeemailer.js');
+const helper = require('../utilities/helper.js');
 
 class UserService {
   /**
@@ -63,6 +64,28 @@ class UserService {
         return callback(error, null);
       } else {
         return callback(null, nodemailer.sendEmail(data));
+      }
+    });
+  }
+
+  resetPassword = (userData, callback) => {
+    helper.getEmailFromToken(userData.token, (error, data) => {
+      if (error) {
+        logger.error(error);
+        return callback(error, null);
+      } else {
+        const inputData = {
+          email: data.dataForToken.email,
+          password: userData.password
+        };
+        userModel.resetPassword(inputData, (error, data) => {
+          if (error) {
+            logger.error(error);
+            return callback(error, null);
+          } else {
+            return callback(null, data);
+          }
+        });
       }
     });
   }

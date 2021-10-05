@@ -14,4 +14,5 @@ module.exports = (app) => {
   app.post('/login', controller.login);
   // api for forgot pasword
   app.post('/forgotPassword', controller.forgotPassword);
+  app.put('/reset-Password', controller.resetPassword);
 };
