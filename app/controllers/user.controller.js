@@ -154,6 +154,13 @@ class Controller {
       }
     }
 
+    /**
+     * description controller function for reset password
+     * @param {*} req
+     * @param {*} res
+     * @returns
+     */
+
     resetPassword=(req, res) => {
       try {
         const userData = {

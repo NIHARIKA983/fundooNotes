@@ -109,6 +109,13 @@ class UserModel {
        });
      };
 
+     /**
+     * @description mongooose method for reseting the password
+     * @param {*} userData
+     * @param {*} callback
+     * @returns
+     */
+
      resetPassword = async (userData, callback) => {
        const hashPass = bcrypt.hashSync(userData.password, 10);
        const data = await User.findOne({ email: userData.email });

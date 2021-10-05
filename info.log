@@ -300,3 +300,36 @@
 {"level":"info","message":"Email id found","timestamp":"2021-10-05T14:04:25.005Z"}
 {"level":"info","message":"Email id found","timestamp":"2021-10-05T14:04:55.197Z"}
 {"level":"info","message":"Email id found","timestamp":"2021-10-05T14:05:04.558Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-05T17:37:49.054Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-05T17:37:49.058Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-05T17:37:51.826Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-05T17:40:42.602Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-05T17:40:42.607Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-05T17:40:42.722Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":883,"level":"info","messageId":"<51411359-ce13-5f29-6cac-0bf4e3f3b460@gmail.com>","messageSize":985,"messageTime":897,"rejected":[],"response":"250 2.0.0 OK  1633456016 o16sm17860326pgv.29 - gsmtp","timestamp":"2021-10-05T17:46:56.453Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-05T17:47:22.975Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-05T17:54:01.154Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-05T17:54:01.160Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-05T17:54:01.276Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":873,"level":"info","messageId":"<3b57aac7-3720-1496-5c1b-3f7b562446c1@gmail.com>","messageSize":985,"messageTime":1025,"rejected":[],"response":"250 2.0.0 OK  1633456486 b10sm12389717pfl.200 - gsmtp","timestamp":"2021-10-05T17:54:46.662Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-05T17:55:46.214Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-05T17:55:46.218Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-05T17:55:46.291Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-05T17:56:29.227Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-05T17:56:29.230Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-05T17:56:29.304Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-05T17:57:06.197Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-05T17:57:06.201Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-05T17:57:06.293Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-05T17:58:42.959Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-05T17:58:42.965Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-05T17:58:43.044Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-05T18:02:56.453Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-05T18:02:56.459Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-05T18:02:56.599Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-05T18:05:23.521Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-05T18:05:23.526Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-05T18:05:23.631Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":899,"level":"info","messageId":"<822c602a-fbf9-8e4a-8a85-cb0a71289252@gmail.com>","messageSize":985,"messageTime":897,"rejected":[],"response":"250 2.0.0 OK  1633457182 s68sm17029661pfb.192 - gsmtp","timestamp":"2021-10-05T18:06:22.192Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-05T18:07:53.046Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-10-05T18:09:12.492Z"}

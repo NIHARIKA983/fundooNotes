@@ -68,6 +68,12 @@ class UserService {
     });
   }
 
+  /**
+     * @description it acts as a middleware between controller and model for reset password
+     * @param {*} userData
+     * @param {*} callback
+     * @returns
+     */
   resetPassword = (userData, callback) => {
     helper.getEmailFromToken(userData.token, (error, data) => {
       if (error) {
