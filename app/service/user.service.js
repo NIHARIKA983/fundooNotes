@@ -10,7 +10,7 @@ const bcrypt = require('bcryptjs');
 const utilities = require('../utilities/helper.js');
 const { logger } = require('../../logger/logger');
 const nodemailer = require('../Utilities/nodeemailer.js');
-const helper = require('../utilities/helper.js');
+// const helper = require('../utilities/helper.js');
 
 class UserService {
   /**
@@ -74,26 +74,16 @@ class UserService {
      * @param {*} callback
      * @returns
      */
-  resetPassword = (userData, callback) => {
-    helper.getEmailFromToken(userData.token, (error, data) => {
-      if (error) {
-        logger.error(error);
-        return callback(error, null);
-      } else {
-        const inputData = {
-          email: data.dataForToken.email,
-          password: userData.password
-        };
-        userModel.resetPassword(inputData, (error, data) => {
-          if (error) {
-            logger.error(error);
-            return callback(error, null);
-          } else {
-            return callback(null, data);
-          }
-        });
-      }
-    });
-  }
+   resetPassword = (inputData, callback) => {
+     userModel.resetPassword(inputData, (error, data) => {
+       if (error) {
+         logger.error('password not update in model');
+         return callback(error, null);
+       } else {
+         logger.info('getting upadated password in data');
+         return callback(null, data);
+       }
+     });
+   }
 }
 module.exports = new UserService();

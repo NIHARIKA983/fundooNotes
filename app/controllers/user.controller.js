@@ -6,6 +6,7 @@
 const userService = require('../service/user.service.js');
 const validation = require('../utilities/validation.js');
 const { logger } = require('../../logger/logger');
+const utilities = require('../utilities/helper.js');
 require('dotenv').config();
 
 class Controller {
@@ -161,48 +162,53 @@ class Controller {
      * @returns
      */
 
-    resetPassword=(req, res) => {
-      try {
-        const userData = {
-          token: req.body.token,
-          password: req.body.password
-        };
+     resetPassword = (req, res) => {
+       try {
+         const loginValidation = validation.resetSchema.validate(req.body.inputData);
+         if (loginValidation.error) {
+           logger.error('Invalid password');
+           res.status(422).send({
+             success: false,
+             message: 'Invalid password'
+           });
+           return;
+         }
 
-        const resetVlaidation = validation.validateReset.validate(userData);
-        if (resetVlaidation.error) {
-          logger.error('Invalid password');
-          res.status(422).send({
-            success: false,
-            message: 'Invalid password'
-          });
-          return;
-        }
+         console.log(req.headers.authorization);
+         const header = req.headers.authorization;
+         const myArr = header.split(' ');
+         const token = myArr[1];
+         const tokenData = utilities.getEmailFromToken(token);
+         const inputData = {
+           email: tokenData.dataForToken.email,
+           password: req.body.password
+         };
 
-        userService.resetPassword(userData, (error, userData) => {
-          if (error) {
-            logger.error(error);
-            return res.status(400).send({
-              message: error,
-              success: false
-            });
-          } else {
-            logger.info('Password reset succesfully');
-            return res.status(200).json({
-              success: true,
-              message: 'Password reset succesfully',
-              data: userData
-            });
-          }
-        });
-      } catch (error) {
-        logger.error('Internal server error');
-        return res.status(500).send({
-          success: false,
-          message: 'Internal server error',
-          data: null
-        });
-      }
-    }
+         userService.resetPassword(inputData, (error, userData) => {
+           if (error) {
+             logger.error('did not data from service to controller');
+             return res.status(400).send({
+               message: error,
+               success: false
+             });
+           } else {
+             logger.info('Password reset succesfully');
+             return res.status(200).json({
+               success: true,
+               message: 'Password reset succesfully',
+               data: userData
+             });
+           }
+         });
+       } catch (error) {
+         logger.error('Internal server error');
+         return res.status(500).send({
+           success: false,
+           message: 'Internal server error',
+           data: null
+         });
+       }
+     };
 }
 
 module.exports = new Controller();

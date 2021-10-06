@@ -333,3 +333,26 @@
 {"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":899,"level":"info","messageId":"<822c602a-fbf9-8e4a-8a85-cb0a71289252@gmail.com>","messageSize":985,"messageTime":897,"rejected":[],"response":"250 2.0.0 OK  1633457182 s68sm17029661pfb.192 - gsmtp","timestamp":"2021-10-05T18:06:22.192Z"}
 {"level":"info","message":"Password reset succesfully","timestamp":"2021-10-05T18:07:53.046Z"}
 {"level":"info","message":"Email id found","timestamp":"2021-10-05T18:09:12.492Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-06T02:11:38.004Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-06T02:11:38.009Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-06T02:11:38.224Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-06T15:20:38.438Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-06T15:20:38.467Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-06T15:20:39.385Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":1016,"level":"info","messageId":"<d86ecd2b-0944-73a7-da55-a559fc800cd7@gmail.com>","messageSize":985,"messageTime":1129,"rejected":[],"response":"250 2.0.0 OK  1633533834 x11sm16339321pfh.75 - gsmtp","timestamp":"2021-10-06T15:23:54.911Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-06T15:38:51.030Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-06T15:38:51.128Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-06T15:38:51.577Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-06T15:41:54.447Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-06T15:41:54.449Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-06T15:44:35.384Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-06T15:44:35.385Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-06T15:47:14.282Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-06T15:47:14.289Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-06T15:47:14.453Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-10-06T15:47:30.251Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-06T15:48:32.353Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-06T15:48:32.359Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-06T15:48:32.448Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-06T15:48:45.577Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-06T15:48:45.578Z"}
