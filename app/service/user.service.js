@@ -1,3 +1,4 @@
+/* eslint-disable node/handle-callback-err */
 /* eslint-disable node/no-callback-literal */
 /**
  * @module       Service
@@ -10,6 +11,7 @@ const bcrypt = require('bcryptjs');
 const utilities = require('../utilities/helper.js');
 const { logger } = require('../../logger/logger');
 const nodemailer = require('../Utilities/nodeemailer.js');
+// const { validate } = require('../models/user.model.js');
 // const helper = require('../utilities/helper.js');
 
 class UserService {
@@ -30,32 +32,29 @@ class UserService {
 
     /**
      * @description sends the data to loginApi in the controller
-     * @method loginUser
+     * @method userLogin
      * @param callback callback for controller
      */
 
-    loginUser = (loginInfo, callback) => {
-      userModel.loginUser(loginInfo, (_err, data) => {
-        if (data) {
-          const check = bcrypt.compare(loginInfo.password, data.password);
-          if (check === false) {
-            logger.info('Valid Password');
-            return callback('invalid Password', null);
-          } else {
-            utilities.token(loginInfo, (error, token) => {
-              if (error) {
-                throw error;
-              } else {
-                return callback(null, token);
-              }
-            });
-          }
-        } else {
-          logger.error('Password does not match');
-          return callback('Please check your email and password ');
-        }
-      });
-    };
+     userLogin = (InfoLogin, callback) => {
+       userModel.loginModel(InfoLogin, (error, data) => {
+         if (data) {
+           bcrypt.compare(InfoLogin.password, data.password, (error, validate) => {
+             if (!validate) {
+               logger.error(error);
+               return callback(error + 'Invalid Password', null);
+             } else {
+               logger.info(' token generated ');
+               const token = utilities.token(InfoLogin);
+               return callback(null, token);
+             }
+           });
+         } else {
+           logger.error(error);
+           return callback(error);
+         }
+       });
+     }
 
   forgotPassword = (email, callback) => {
     userModel.forgotPassword(email, (error, data) => {
@@ -70,7 +69,7 @@ class UserService {
 
   /**
      * @description it acts as a middleware between controller and model for reset password
-     * @param {*} userData
+     * @param {*} inputData
      * @param {*} callback
      * @returns
      */

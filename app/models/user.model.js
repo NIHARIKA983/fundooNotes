@@ -74,24 +74,25 @@ class UserModel {
 
      /**
       * @description login User from the database
-      * @param loginData
+      * @param loginInfo
       * @param callback for service
       */
 
-     loginUser = (loginData, callBack) => {
-       User.findOne({ email: loginData.email }, (error, data) => {
-         if (error) {
-           logger.error('Find error while loggin user');
-           return callBack(error, null);
-         } else if (!data) {
-           logger.error('Invalid User');
-           return callBack('Invalid Credentials', null);
-         } else {
-           logger.info('Email id found');
-           return callBack(null, data);
-         }
-       });
-     }
+      loginModel = (loginInfo, callback) => {
+        try {
+          User.findOne({ email: loginInfo.email }, (error, data) => {
+            if (error) {
+              return callback(error, null);
+            } else if (!data) {
+              return callback('Invalid email', null);
+            } else {
+              return callback(null, data);
+            }
+          });
+        } catch (error) {
+          callback('Internal error', null);
+        }
+      }
 
      /**
      * @description mongoose function for forgot password

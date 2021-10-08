@@ -6,7 +6,7 @@
  */
 
 const controller = require('../controllers/user.controller.js');
-const utilities = require('../utilities/helper.js');
+const middleware = require('../utilities/helper.js');
 
 module.exports = (app) => {
   // api for registration
@@ -16,5 +16,5 @@ module.exports = (app) => {
   // api for forgot pasword
   app.post('/forgotPassword', controller.forgotPassword);
   // api for Reset pasword
-  app.put('/reset-Password', utilities.validateToken, controller.resetPassword);
+  app.put('/reset-Password', middleware.validateToken, controller.resetPassword);
 };

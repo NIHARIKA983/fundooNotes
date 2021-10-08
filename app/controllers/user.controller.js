@@ -6,7 +6,7 @@
 const userService = require('../service/user.service.js');
 const validation = require('../utilities/validation.js');
 const { logger } = require('../../logger/logger');
-const utilities = require('../utilities/helper.js');
+// const utilities = require('../utilities/helper.js');
 require('dotenv').config();
 
 class Controller {
@@ -66,48 +66,46 @@ class Controller {
      * @param req,res for service
      */
 
-    login = (req, res) => {
-      try {
-        const loginInfo = {
-          email: req.body.email,
-          password: req.body.password
-        };
+     login = (req, res) => {
+       try {
+         const userLoginInfo = {
+           email: req.body.email,
+           password: req.body.password
+         };
+         const loginValidation = validation.authLogin.validate(userLoginInfo);
+         if (loginValidation.error) {
+           logger.error(loginValidation.error);
+           res.status(422).send({
+             success: false,
+             message: loginValidation.error.message
+           });
+         }
+         userService.userLogin(userLoginInfo, (error, token) => {
+           if (error) {
+             logger.error(error);
+             return res.status(401).json({
+               success: false,
+               message: 'Unable to login. Please enter correct info',
+               error
+             });
+           }
+           logger.info('User logged in successfully');
+           return res.status(201).json({
+             success: true,
+             message: 'User logged in successfully',
+             token: token
+           });
+         });
+       } catch (error) {
+         return res.status(500).json({
+           success: false,
+           message: 'Error while Login',
+           data: null
+         });
+       }
+     };
 
-        const loginValidation = validation.authLogin.validate(loginInfo);
-
-        if (loginValidation.error) {
-          return res.status(400).send({
-            success: false,
-            message: 'Wrong Input Validations',
-            data: loginValidation
-          });
-        }
-        userService.loginUser(loginInfo, (error, data) => {
-          if (error) {
-            return res.status(400).json({
-              success: false,
-              message: 'Incorrect Email And Password!',
-              error
-            });
-          } else {
-            return res.status(200).json({
-              success: true,
-              message: 'User successfully logged In',
-              token: data
-
-            });
-          }
-        });
-      } catch (error) {
-        return res.status(500).send({
-          success: false,
-          message: 'Internal server error'
-
-        });
-      }
-    }
-
-    /**
+     /**
      * description controller function for forgot password
      * @param {*} req
      * @param {*} res
@@ -164,6 +162,10 @@ class Controller {
 
      resetPassword = (req, res) => {
        try {
+         const inputData = {
+           email: req.user.dataForToken.email,
+           password: req.body.password
+         };
          const loginValidation = validation.resetSchema.validate(req.body.inputData);
          if (loginValidation.error) {
            logger.error('Invalid password');
@@ -173,17 +175,6 @@ class Controller {
            });
            return;
          }
-
-         console.log(req.headers.authorization);
-         const header = req.headers.authorization;
-         const myArr = header.split(' ');
-         const token = myArr[1];
-         const tokenData = utilities.getEmailFromToken(token);
-         const inputData = {
-           email: tokenData.dataForToken.email,
-           password: req.body.password
-         };
-
          userService.resetPassword(inputData, (error, userData) => {
            if (error) {
              logger.error('did not data from service to controller');
