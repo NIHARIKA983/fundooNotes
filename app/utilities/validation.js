@@ -56,6 +56,7 @@ class Validation {
         resetSchema = Joi.object({
           email: Joi.string().required(),
           password: Joi.string().required()
+            .pattern(new RegExp('[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}'))
         })
 }
 module.exports = new Validation();

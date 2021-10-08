@@ -75,7 +75,7 @@ class Controller {
          const loginValidation = validation.authLogin.validate(userLoginInfo);
          if (loginValidation.error) {
            logger.error(loginValidation.error);
-           res.status(422).send({
+           res.status(400).send({
              success: false,
              message: loginValidation.error.message
            });
@@ -83,14 +83,14 @@ class Controller {
          userService.userLogin(userLoginInfo, (error, token) => {
            if (error) {
              logger.error(error);
-             return res.status(401).json({
+             return res.status(400).json({
                success: false,
                message: 'Unable to login. Please enter correct info',
                error
              });
            }
            logger.info('User logged in successfully');
-           return res.status(201).json({
+           return res.status(200).json({
              success: true,
              message: 'User logged in successfully',
              token: token
@@ -166,7 +166,7 @@ class Controller {
            email: req.user.dataForToken.email,
            password: req.body.password
          };
-         const loginValidation = validation.resetSchema.validate(req.body.inputData);
+         const loginValidation = validation.resetSchema.validate(inputData);
          if (loginValidation.error) {
            logger.error('Invalid password');
            res.status(422).send({
