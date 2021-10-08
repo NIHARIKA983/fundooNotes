@@ -606,3 +606,128 @@
 {"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T15:52:44.672Z"}
 {"level":"info","message":"getting upadated password in data","timestamp":"2021-10-08T15:54:15.216Z"}
 {"level":"info","message":"Password reset succesfully","timestamp":"2021-10-08T15:54:15.217Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:04:34.425Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:04:34.428Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:04:34.548Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-08T16:04:36.016Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-08T16:04:36.023Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:04:36.042Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:04:36.071Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:04:36.072Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:04:36.088Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:04:36.121Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:04:36.122Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:07:23.507Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:07:23.511Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:07:23.607Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-08T16:07:24.445Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-08T16:07:24.446Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:07:24.475Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":918,"level":"info","messageId":"<742a5cde-43d9-21ca-4bea-e1c019282277@gmail.com>","messageSize":985,"messageTime":1007,"rejected":[],"response":"250 2.0.0 OK  1633709249 w5sm3121123pgp.79 - gsmtp","timestamp":"2021-10-08T16:07:28.105Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:09:36.489Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:09:36.493Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:09:36.625Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-08T16:09:38.042Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-08T16:09:38.049Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:09:38.069Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:09:38.084Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:09:38.085Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:09:38.100Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:09:38.116Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:09:38.116Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:15:11.145Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:15:11.149Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:15:11.248Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-08T16:15:12.638Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-08T16:15:12.645Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:15:12.665Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:15:12.684Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:15:12.686Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:15:12.717Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:15:12.734Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:15:12.735Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:16:57.182Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:16:57.184Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:16:57.252Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-08T16:16:58.645Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-08T16:16:58.652Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:16:58.672Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:16:58.686Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:16:58.686Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:16:58.731Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:16:58.748Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:16:58.749Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:19:33.735Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:19:33.739Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:19:33.852Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-08T16:19:35.279Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-08T16:19:35.286Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:19:35.305Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:19:35.319Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:19:35.320Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:19:35.336Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:19:35.352Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:19:35.370Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:29:26.510Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:29:26.520Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:29:26.657Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-08T16:29:27.438Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-08T16:29:27.439Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-08T16:29:27.865Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-08T16:29:27.866Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:31:57.841Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:31:57.849Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:31:58.052Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:31:58.227Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:31:58.396Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:33:29.560Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:33:29.565Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:33:29.824Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-08T16:33:30.466Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-08T16:33:30.468Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:33:30.581Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:36:07.827Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:36:07.830Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:36:07.940Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-08T16:36:09.745Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-08T16:36:09.746Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:36:09.794Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":1069,"level":"info","messageId":"<f6b231da-c409-830e-4177-64acf601c7ed@gmail.com>","messageSize":985,"messageTime":783,"rejected":[],"response":"250 2.0.0 OK  1633710974 h24sm3194514pfn.180 - gsmtp","timestamp":"2021-10-08T16:36:12.993Z"}
+{"level":"info","message":"User registered","timestamp":"2021-10-08T16:42:27.706Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:43:21.411Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:43:21.413Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:43:21.511Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-08T16:43:22.427Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-08T16:43:22.428Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:43:22.440Z"}
+{"accepted":["pranupa1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["pranupa1996@gmail.com"]},"envelopeTime":791,"level":"info","messageId":"<0fee1885-d1c5-129e-b846-515068e20266@gmail.com>","messageSize":965,"messageTime":690,"rejected":[],"response":"250 2.0.0 OK  1633711406 g10sm3220567pfv.109 - gsmtp","timestamp":"2021-10-08T16:43:25.100Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":809,"level":"info","messageId":"<aaed5c6c-e364-bb4a-6657-748cbd5edfdd@gmail.com>","messageSize":985,"messageTime":877,"rejected":[],"response":"250 2.0.0 OK  1633711406 w15sm3243107pfc.220 - gsmtp","timestamp":"2021-10-08T16:43:25.316Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:44:45.610Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:44:45.614Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:44:45.741Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-08T16:44:47.549Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-08T16:44:47.558Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:44:47.579Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:44:47.597Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:44:47.598Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:44:47.632Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:44:47.661Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:44:47.664Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:46:32.183Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:46:32.190Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:46:32.359Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-08T16:46:34.124Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-08T16:46:34.131Z"}
+{"_original":{"email":"ak","password":"akash12$&"},"details":[{"context":{"key":"email","label":"email","regex":{},"value":"ak"},"message":"\"email\" with value \"ak\" fails to match the required pattern: /^[a-zA-Z0-9]+([+_.-][a-zA-Z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?$/","path":["email"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:46:34.151Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:46:34.167Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:46:34.168Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-08T16:47:32.978Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:47:32.983Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-08T16:47:33.179Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-08T16:47:34.767Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-08T16:47:34.774Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-08T16:47:35.361Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-08T16:47:35.362Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:47:35.383Z"}
+{"accepted":["pranupa1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["pranupa1996@gmail.com"]},"envelopeTime":963,"level":"info","messageId":"<f0e1b909-552f-e804-a0b9-6837b5ee0f5f@gmail.com>","messageSize":965,"messageTime":767,"rejected":[],"response":"250 2.0.0 OK  1633711659 s19sm3326976pfs.208 - gsmtp","timestamp":"2021-10-08T16:47:38.188Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":784,"level":"info","messageId":"<8b1bc64a-b5ba-b396-f9c6-31db4e435637@gmail.com>","messageSize":985,"messageTime":1042,"rejected":[],"response":"250 2.0.0 OK  1633711660 nn14sm3066549pjb.27 - gsmtp","timestamp":"2021-10-08T16:47:38.783Z"}

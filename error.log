@@ -250,3 +250,63 @@
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T15:25:33.098Z"}
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T15:30:24.356Z"}
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T15:52:44.588Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:04:34.429Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:04:36.043Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:04:36.072Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:04:36.073Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:04:36.088Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:04:36.122Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:04:36.123Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:07:23.512Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:07:24.475Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:09:36.493Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:09:38.069Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:09:38.084Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:09:38.085Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:09:38.101Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:09:38.116Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:09:38.117Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:15:11.149Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:15:12.666Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:15:12.685Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:15:12.686Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:15:12.717Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:15:12.734Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:15:12.735Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:16:57.184Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:16:58.672Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:16:58.686Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:16:58.687Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:16:58.731Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:16:58.749Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:16:58.749Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:19:33.739Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:19:35.305Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:19:35.319Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:19:35.320Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:19:35.337Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:19:35.353Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:19:35.371Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:29:26.520Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:31:57.850Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:31:58.228Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:31:58.396Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:33:29.566Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:33:30.582Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:36:07.830Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:36:09.795Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:43:21.413Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:43:22.441Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:44:45.614Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:44:47.580Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:44:47.598Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:44:47.599Z"}
+{"_original":{"email":"akash123@gmail.com","password":"akash12"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"akash12"},"message":"\"password\" with value \"akash12\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:44:47.632Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:44:47.663Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:44:47.665Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:46:32.190Z"}
+{"_original":{"email":"ak","password":"akash12$&"},"details":[{"context":{"key":"email","label":"email","regex":{},"value":"ak"},"message":"\"email\" with value \"ak\" fails to match the required pattern: /^[a-zA-Z0-9]+([+_.-][a-zA-Z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?$/","path":["email"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-10-08T16:46:34.153Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:46:34.167Z"}
+{"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:46:34.168Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:47:32.984Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:47:35.383Z"}
