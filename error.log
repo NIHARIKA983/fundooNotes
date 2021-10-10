@@ -310,3 +310,35 @@
 {"level":"error","message":"Invalid email","timestamp":"2021-10-08T16:46:34.168Z"}
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-08T16:47:32.984Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-10-08T16:47:35.383Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-09T02:05:10.785Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-09T02:11:22.615Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-09T02:11:59.152Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-09T02:13:43.276Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-09T02:14:29.531Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-09T02:18:41.954Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-09T02:21:26.722Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-09T02:25:21.320Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-09T02:58:26.977Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-09T02:59:16.315Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-09T03:01:17.175Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-09T03:01:19.620Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-09T03:01:46.575Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-09T03:01:49.109Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-09T03:02:06.592Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-09T03:04:24.027Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-09T04:15:50.933Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-09T04:17:27.296Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-09T04:17:29.665Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-10T11:03:24.026Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-10T11:12:42.452Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-10T11:22:05.040Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-10-10T11:30:05.790Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-10T11:37:23.377Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-10-10T11:39:29.505Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-10-10T11:45:01.462Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-10T11:59:01.705Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-10T12:20:37.173Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-10-10T12:21:18.010Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-10T12:22:32.825Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-10T12:31:45.640Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-10T12:33:34.000Z"}
