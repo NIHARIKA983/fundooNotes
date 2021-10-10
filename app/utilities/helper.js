@@ -22,11 +22,12 @@ class Helper {
 
   token = (data) => {
     const dataForToken = {
-      id: data.id,
+      id: data._id,
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email
     };
+    console.log(dataForToken);
     return jwt.sign({ dataForToken }, process.env.JWT_SECRET);
   }
 

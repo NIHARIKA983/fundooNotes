@@ -2,6 +2,7 @@
 const { logger } = require('../../logger/logger');
 const mongoose = require('mongoose');
 const noteSchema = mongoose.Schema({
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
   title: {
     type: String
   },
@@ -17,20 +18,20 @@ const noteSchema = mongoose.Schema({
 
 const NoteRegister = mongoose.model('NoteRegister', noteSchema);
 class Model {
-    createNote = (info, callback) => {
-      const note = new NoteRegister({
-        userId: info.userId,
-        title: info.title,
-        description: info.description
-      });
-      note.save((error, data) => {
-        if (error) {
-          logger.error(error);
-          return callback(error, null);
-        } else {
-          return callback(null, data);
-        }
-      });
-    }
+  createNote = (info, callback) => {
+    const note = new NoteRegister({
+      userId: info.userId,
+      title: info.title,
+      description: info.description
+    });
+    note.save((error, data) => {
+      if (error) {
+        logger.error(error);
+        return callback(error, null);
+      } else {
+        return callback(null, data);
+      }
+    });
+  }
 }
 module.exports = new Model();

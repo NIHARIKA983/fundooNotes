@@ -45,7 +45,7 @@ class UserService {
                return callback(error + 'Invalid Password', null);
              } else {
                logger.info(' token generated ');
-               const token = utilities.token(InfoLogin);
+               const token = utilities.token(data);
                return callback(null, token);
              }
            });
