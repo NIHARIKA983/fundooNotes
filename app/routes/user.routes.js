@@ -23,4 +23,5 @@ module.exports = (app) => {
   app.post('/createnotes', middleware.validateToken, noteController.createNote);
   app.get('/getnotes', middleware.validateToken, noteController.getNote);
   app.get('/getnotes/:id', middleware.validateToken, noteController.getNoteById);
+  app.put('/updatenotes/:id', middleware.validateToken, noteController.updateNoteById);
 };
