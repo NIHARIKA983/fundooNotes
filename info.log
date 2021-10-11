@@ -943,3 +943,44 @@
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T12:46:19.541Z"}
 {"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T12:46:20.080Z"}
 {"level":"info","message":"All notes retrived","timestamp":"2021-10-11T12:50:39.676Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T13:18:31.128Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T13:18:31.131Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T13:18:31.267Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T13:31:23.447Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T13:31:23.450Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T13:31:23.647Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T13:35:12.335Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T13:35:12.350Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T13:35:12.433Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T13:39:01.810Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T13:39:01.814Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T13:39:01.892Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-10-11T13:42:37.833Z"}
+{"level":"info","message":"All notes retrived","timestamp":"2021-10-11T13:42:49.736Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T13:58:20.983Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T13:58:20.986Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T13:58:21.050Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T14:17:39.446Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T14:17:39.451Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T14:17:39.546Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T14:58:48.661Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T14:58:48.663Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T14:58:48.758Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T14:59:17.154Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T14:59:17.158Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T14:59:17.243Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T15:02:57.313Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T15:02:57.317Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T15:02:57.402Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T15:03:51.149Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T15:03:51.152Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T15:03:51.251Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T15:12:19.458Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T15:12:19.465Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T15:12:19.578Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T15:17:24.900Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T15:17:24.904Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T15:17:25.111Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T15:27:42.509Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T15:27:42.516Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T15:27:42.612Z"}
