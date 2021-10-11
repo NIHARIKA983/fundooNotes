@@ -24,4 +24,5 @@ module.exports = (app) => {
   app.get('/getnotes', middleware.validateToken, noteController.getNote);
   app.get('/getnotes/:id', middleware.validateToken, noteController.getNoteById);
   app.put('/updatenotes/:id', middleware.validateToken, noteController.updateNoteById);
+  app.delete('/deletenotes/:id', middleware.validateToken, noteController.deleteNoteById);
 };

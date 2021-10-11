@@ -81,5 +81,13 @@ class Model {
       return callback(err, null);
     }
   }
+
+  deleteNoteById = async (id) => {
+    try {
+      return await NoteRegister.findOneAndDelete({ $and: [{ _id: id.noteId }, { userId: id.userId }] });
+    } catch (err) {
+      return err;
+    }
+  }
 }
 module.exports = new Model();
