@@ -89,7 +89,6 @@ class Note {
           success: false
         });
       }
-      console.log(data);
       return res.status(200).json({
         message: 'Note retrieved succesfully',
         success: true,
