@@ -1,4 +1,9 @@
-// const logger = require('../logger/logger');
+/**
+ * @module       Models
+ * @file         notes.js
+ * @description to save find update and delete in the database
+ * @author       Niharika
+ */
 const { logger } = require('../../logger/logger');
 const mongoose = require('mongoose');
 const noteSchema = mongoose.Schema({
@@ -12,12 +17,20 @@ const noteSchema = mongoose.Schema({
     minlength: 2
   }
 }, {
+  // generates the time stamp the data is been added
   timestamps: true
 
 });
 
 const NoteRegister = mongoose.model('NoteRegister', noteSchema);
+
+// created a class to write functions
 class Model {
+  /**
+   * @description function written to create notes into database
+   * @param {*} a valid info is expected
+   * @returns saved data or if error returns error
+   */
   createNote = (info, callback) => {
     const note = new NoteRegister({
       userId: info.userId,
@@ -32,6 +45,19 @@ class Model {
         return callback(null, data);
       }
     });
+  }
+
+  /**
+   * @description function written to get all notes from database
+   * @returns retrieved notes or if error returns error
+   */
+  getNote = (id, callback) => {
+    NoteRegister.find({ userId: id.id })
+      .then((data) => {
+        callback(null, data);
+      }).catch((err) => {
+        callback(err, null);
+      });
   }
 }
 module.exports = new Model();

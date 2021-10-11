@@ -1,8 +1,17 @@
-// const logger = require('../logger/logger');
-// const logger = require('../logger/logger');
+/**
+ * @module       Service
+ * @file         notes.js
+ * @description  It is work as a middleware between models and controller
+ * @author       Niharika
+ */
 const { logger } = require('../../logger/logger');
 const noteModel = require('../models/notes');
 class Service {
+  /**
+     * @description this function is written to send data models
+     * @param {*} A valid note is expected
+     * @returns error if it has error else data
+     */
   createNote = (note, callback) => {
     noteModel.createNote(note, (error, data) => {
       if (error) {
@@ -13,6 +22,20 @@ class Service {
       }
     }
     );
+  }
+
+  /**
+     * @description this function is written to trigger or call the models function
+     * @returns error if it has error else data
+     */
+  getNote = (id, callback) => {
+    noteModel.getNote(id, (err, data) => {
+      if (err) {
+        return callback(err, null);
+      } else {
+        return callback(null, data);
+      }
+    });
   }
 }
 module.exports = new Service();
