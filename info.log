@@ -1006,3 +1006,11 @@
 {"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-11T19:38:11.379Z"}
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-11T19:38:11.389Z"}
 {"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-11T19:38:11.567Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-12T01:56:25.261Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-12T01:56:25.266Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-12T01:56:25.898Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-12T06:07:53.826Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-12T06:07:53.831Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-12T06:07:54.949Z"}
+{"level":"info","message":"All notes retrived","timestamp":"2021-10-12T06:14:05.894Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-10-12T06:16:43.709Z"}
