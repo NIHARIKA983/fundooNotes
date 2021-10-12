@@ -1014,3 +1014,14 @@
 {"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-12T06:07:54.949Z"}
 {"level":"info","message":"All notes retrived","timestamp":"2021-10-12T06:14:05.894Z"}
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-10-12T06:16:43.709Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-12T06:21:26.309Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-12T06:21:26.315Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-12T06:21:26.680Z"}
+{"level":"error","message":null,"timestamp":"2021-10-12T06:23:55.347Z"}
+{"level":"error","message":"nullInvalid Password","timestamp":"2021-10-12T06:23:55.353Z"}
+{"level":"info","message":"User registered","timestamp":"2021-10-12T06:25:15.579Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-12T06:25:54.604Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-12T06:25:54.697Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-12T06:37:59.448Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-12T06:37:59.451Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-12T06:37:59.546Z"}
