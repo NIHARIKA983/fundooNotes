@@ -65,5 +65,33 @@ class Validation {
             )
             .required()
         });
+
+        notesCreationValidation = Joi.object({
+          userId: Joi.string().required(),
+          title: Joi.string().min(5)
+            .required(),
+
+          description: Joi.string().min(5)
+            .required()
+        });
+
+        getNoteValidation = Joi.object({
+          id: Joi.string().required()
+        });
+
+        notesUpdateValidation = Joi.object({
+          id: Joi.string().required(),
+          userId: Joi.string().required(),
+          title: Joi.string().min(5)
+            .required(),
+
+          description: Joi.string().min(5)
+            .required()
+        });
+
+        notesdeleteValidation = Joi.object({
+          userId: Joi.string().required(),
+          noteId: Joi.string().required()
+        });
 }
 module.exports = new Validation();
