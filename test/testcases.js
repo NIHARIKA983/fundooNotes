@@ -8,16 +8,23 @@ const registrationData = require('./user.json');
 const loginData = require('./user.json');
 const userInputs = require('./user.json');
 const userDB = require('./user.json');
+const faker = require('faker');
 
 chai.should();
 
 describe('registartion', () => {
   it('givenRegistrationDetails_whenProper_shouldSaveInDB', (done) => {
-    const registartionDetails = registrationData.user.registration;
+    // const registartionDetails = registrationData.user.registration;
+    const Register = {
+      firstName: faker.lorem.word(),
+      lastName: faker.lorem.word(),
+      email: faker.lorem.word(),
+      password: faker.lorem.word()
+    };
     chai
       .request(server)
       .post('/register')
-      .send(registartionDetails)
+      .send(Register)
       .end((err, res) => {
         if (err) {
           return done(err);
