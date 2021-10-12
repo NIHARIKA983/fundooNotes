@@ -3,7 +3,7 @@
         "registration": {
             "firstName": "Rekha",
             "lastName": "An",
-            "email": "rekha12@gmail.com",
+            "email": "rekha@gmail.com",
             "password": "rekha12$&"
         },
         "registrationWithImproperDetails": {

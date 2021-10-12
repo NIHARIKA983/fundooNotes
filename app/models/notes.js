@@ -51,14 +51,20 @@ class Model {
    * @description function written to get all notes from database
    * @returns retrieved notes or if error returns error
    */
-  getNote = (id, callback) => {
-    NoteRegister.find({ userId: id.id })
-      .then((data) => {
-        callback(null, data);
-      }).catch((err) => {
-        callback(err, null);
-      });
-  }
+
+  getNote = (id) => {
+    return new Promise((resolve, reject) => {
+      NoteRegister.find({ userId: id.id })
+        .then((data) => resolve(data))
+        .catch((err) => reject(err));
+    });
+  };
+
+  /**
+   * @description function written to get notes by Id into database
+   * @param {*} valid notesId is expected
+   * @returns notes of particular Id or if any error return error
+   */
 
   getNoteById = async (id) => {
     try {
@@ -67,21 +73,29 @@ class Model {
       return err;
     }
   }
+  /**
+   * @description function written to update notes by Id into database
+   * @returns notes of particular Id or if any error return error
+   */
 
-  updateNoteById = (updatedNote, callback) => {
-    try {
-      NoteRegister.findByIdAndUpdate(updatedNote.id, { title: updatedNote.title, description: updatedNote.description }, { new: true }, (err, data) => {
-        if (err) {
-          return callback(err, null);
-        } else {
-          return callback(null, data);
-        }
-      });
-    } catch (err) {
-      return callback(err, null);
-    }
-  }
+  updateNoteById = (updatedNote) => {
+    return new Promise((resolve, reject) => {
+      NoteRegister.findByIdAndUpdate(
+        updatedNote.id,
+        { title: updatedNote.title, description: updatedNote.description },
+        { new: true }
+      )
+        .then((data) => resolve(data))
+        .catch((err) => reject(err));
+    });
+  };
 
+  /**
+   * @description function written to update isDeleted to true
+   * @param {*} notesId
+   * @param {*} userId
+   * @returns data else if error returns error
+   */
   deleteNoteById = async (id) => {
     try {
       return await NoteRegister.findOneAndDelete({ $and: [{ _id: id.noteId }, { userId: id.userId }] });

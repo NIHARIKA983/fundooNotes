@@ -63,10 +63,10 @@ class Note {
      * @param {*} res
      * @returns response
      */
+
   getNote = (req, res) => {
     try {
       const id = { id: req.user.dataForToken.id };
-
       const getNoteValidation = validation.getNoteValidation.validate(id);
       if (getNoteValidation.error) {
         console.log(getNoteValidation.error);
@@ -76,29 +76,29 @@ class Note {
           data: getNoteValidation
         });
       }
-      noteService.getNote((id), (err, data) => {
-        if (err) {
-          logger.error('Failed to get all notes');
-          return res.status(400).json({
-            message: 'failed to get note',
-            success: false
-          });
-        } else {
-          logger.info('All notes retrived');
-          return res.status(201).json({
-            message: 'Notes retrived successfully',
-            success: true,
-            data: data
-          });
-        }
-      });
+      noteService.getNote(id, resolve, reject);
+      function resolve (data) {
+        logger.info('Get All Notes successfully');
+        return res.status(201).json({
+          message: 'Get All Notes successfully',
+          success: true,
+          data: data
+        });
+      }
+      function reject () {
+        logger.error('Failed to get all notes');
+        return res.status(400).json({
+          message: 'failed to get all notes',
+          success: false
+        });
+      }
     } catch {
-      logger.error('Error occured while retrieving notes');
+      logger.error('Internal Error');
       return res.status(500).json({
         message: 'Internal Error'
       });
     }
-  }
+  };
 
   getNoteById = async (req, res) => {
     try {
@@ -135,7 +135,13 @@ class Note {
     }
   }
 
-  updateNoteById =(req, res) => {
+  /**
+     * @description function written to update notes using ID from the database
+     * @param {*} req
+     * @param {*} res
+     * @returns response
+     */
+  updateNoteById = (req, res) => {
     try {
       const updateNote = {
         id: req.params.id,
@@ -143,8 +149,6 @@ class Note {
         title: req.body.title,
         description: req.body.description
       };
-      console.log('note for controller :: ' + updateNote);
-
       const updateNoteValidation = validation.notesUpdateValidation.validate(updateNote);
       if (updateNoteValidation.error) {
         console.log(updateNoteValidation.error);
@@ -154,31 +158,37 @@ class Note {
           data: updateNoteValidation
         });
       }
-      noteService.updateNoteById(updateNote, (error, data) => {
-        if (error) {
-          logger.error('failed to update note');
-          return res.status(400).json({
-            message: 'failed to update note',
-            success: false
-          });
-        } else {
-          logger.info('Successfully inserted note');
-          return res.status(201).send({
-            message: 'Successfully update note',
-            success: true,
-            data: data
-          });
-        }
-      });
+      noteService.updateNoteById(updateNote, resolve, reject);
+      function resolve (data) {
+        logger.info('Note Updated Successfully');
+        return res.status(201).send({
+          message: 'Note Updated Successfully',
+          success: true,
+          data: data
+        });
+      }
+      function reject () {
+        logger.error('Note Not Updated or NoteId Is Not Match');
+        return res.status(400).json({
+          message: 'Note Not Updated or NoteId Is Not Match',
+          success: false
+        });
+      }
     } catch {
-      logger.error('Internal server error');
+      logger.error('Internal Server Error');
       return res.status(500).json({
-        message: 'Error occured',
+        message: 'Internal server error',
         success: false
       });
     }
-  }
+  };
 
+  /**
+     * @description function written to delete note by ID
+     * @param {*} req
+     * @param {*} res
+     * @returns response
+     */
   deleteNoteById = async (req, res) => {
     try {
       const id = { userId: req.user.dataForToken.id, noteId: req.params.id };
