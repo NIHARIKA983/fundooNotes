@@ -1457,3 +1457,13 @@
 {"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-13T15:12:12.074Z"}
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T15:12:12.077Z"}
 {"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-13T15:12:12.151Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-13T15:32:39.083Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T15:32:39.086Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-13T15:32:39.150Z"}
+{"level":"info","message":"Label inserted","timestamp":"2021-10-13T15:32:47.775Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-13T17:47:01.930Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T17:47:01.957Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-13T17:47:02.829Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-13T17:52:17.265Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-13T17:52:17.388Z"}
+{"level":"info","message":"Label inserted","timestamp":"2021-10-13T17:53:20.351Z"}
