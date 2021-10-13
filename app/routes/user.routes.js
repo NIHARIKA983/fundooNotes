@@ -32,4 +32,5 @@ module.exports = (app) => {
   app.get('/getlabels', middleware.validateToken, label.getLabel);
   app.get('/getlabel/:id', middleware.validateToken, label.getLabelById);
   app.put('/updatelabel/:id', middleware.validateToken, label.updateLabel);
+  app.delete('/deletelabel/:id', middleware.validateToken, label.deleteLabelById);
 };

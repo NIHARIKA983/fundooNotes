@@ -216,7 +216,7 @@ class Note {
       });
     } catch (err) {
       return res.status(500).json({
-        message: 'Note not updated',
+        message: 'Note not deleted',
         success: false,
         data: err
       });
