@@ -1430,3 +1430,16 @@
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T13:44:03.331Z"}
 {"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-13T13:44:03.402Z"}
 {"level":"info","message":"Found all labels","timestamp":"2021-10-13T13:44:09.855Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-13T14:00:30.772Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T14:00:30.775Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-13T14:00:30.877Z"}
+{"level":"info","message":"Found label by id","timestamp":"2021-10-13T14:02:50.341Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-13T14:03:51.561Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T14:03:51.565Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-13T14:03:51.691Z"}
+{"level":"info","message":"Found label by id","timestamp":"2021-10-13T14:03:58.938Z"}
+{"level":"info","message":"Found label by id","timestamp":"2021-10-13T14:04:05.115Z"}
+{"level":"info","message":"Label inserted","timestamp":"2021-10-13T14:04:35.427Z"}
+{"level":"info","message":"Found label by id","timestamp":"2021-10-13T14:04:47.841Z"}
+{"level":"info","message":"Found all labels","timestamp":"2021-10-13T14:04:57.932Z"}
+{"level":"info","message":"Found label by id","timestamp":"2021-10-13T14:05:22.310Z"}

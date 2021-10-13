@@ -80,5 +80,32 @@ class Label {
         }
       });
     }
+
+    /**
+     * @description function written  to get label by ID
+     * @param {*} req
+     *
+     * @param {*} res
+     */
+
+    getLabelById = (req, res) => {
+      const id = req.params.id;
+      labelService.getLabelById(id, (resolve, reject) => {
+        if (resolve) {
+          logger.info('Found label by id');
+          res.status(200).send({
+            message: 'label Found',
+            success: true,
+            data: resolve
+          });
+        } else {
+          logger.error('Label not found by id');
+          res.status(500).send({
+            message: 'label not Found',
+            success: false
+          });
+        }
+      });
+    }
 }
 module.exports = new Label();

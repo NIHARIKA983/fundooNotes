@@ -8,9 +8,9 @@ const mongoose = require('mongoose');
 const labelSchema = mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 
-  noteId: {
-    type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }]
-  },
+  //   noteId: {
+  //     type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }]
+  //   },
 
   labelName: {
     type: String,
@@ -52,6 +52,19 @@ class Model {
           resolve(data);
         })
           .catch((error) => reject(error));
+      });
+    }
+
+    /**
+      *
+      * @param {*} id
+      * @description retrieve all the label created
+      */
+    getLabelById = (id) => {
+      return new Promise((resolve, reject) => {
+        LabelRegister.findById(id).then((data) => {
+          resolve(data);
+        }).catch((err) => reject(err));
       });
     }
 }
