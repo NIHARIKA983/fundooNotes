@@ -98,5 +98,10 @@ class Validation {
           labelName: Joi.string()
             .required()
         })
+
+         validateLabel = Joi.object({
+           labelName: Joi.string()
+             .required()
+         })
 }
 module.exports = new Validation();

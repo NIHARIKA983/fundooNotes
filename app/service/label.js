@@ -36,5 +36,19 @@ class Service {
       labelModel.getLabelById(id).then((data) => { callback(data, null); })
         .catch((err) => { callback(null, err); });
     }
+
+    /**
+     * @description   : createLabel will takes the data from controller and send it to models
+      * @param {*} a valid label is expected
+      * @returns
+      */
+
+    async updateLabel (label) {
+      try {
+        return await labelModel.updateLabel(label);
+      } catch (error) {
+        return error;
+      }
+    }
 }
 module.exports = new Service();

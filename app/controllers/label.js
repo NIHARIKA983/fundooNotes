@@ -107,5 +107,51 @@ class Label {
         }
       });
     }
+
+    /**
+     * @description function written to update label
+     * @param {*} a valid req body is expected
+     * @param {*} res
+     */
+
+    updateLabel =async (req, res) => {
+      try {
+        const valid = validation.validateLabel.validate(req.body);
+        if (valid.error) {
+          logger.error('Invalid label given to update');
+          return res.status(400).send({
+            message: 'Please enter valid label',
+            success: false,
+            error: valid.error
+          });
+        } else {
+          const label = {
+            labelName: req.body.labelName,
+            labelId: req.params.id
+          };
+          const updatedlabel = await labelService.updateLabel(label);
+          if (updatedlabel.message) {
+            logger.error('Label to be updated not found');
+            return res.status(404).send({
+              message: 'Label Not Found',
+              success: false
+            });
+          }
+          logger.info('label updated');
+          return res.status(200).send({
+            message: 'label updated',
+            success: true,
+            data: updatedlabel
+          });
+        }
+      } catch (error) {
+        logger.error('Label to be updated not foudn due to error');
+        return res.status(500).send({
+          message: 'Failed to update label',
+          success: false,
+          data: error
+        });
+      }
+    }
 }
 module.exports = new Label();

@@ -67,5 +67,20 @@ class Model {
         }).catch((err) => reject(err));
       });
     }
+
+    /**
+      * @description : updating the label
+      * @param {*} labelId
+      * @param {*} label
+      * @returns data else if returns error
+      */
+
+    async updateLabel (label) {
+      try {
+        return await LabelRegister.findByIdAndUpdate(label.labelId, { labelName: label.labelName }, { new: true });
+      } catch (err) {
+        return err;
+      }
+    }
 }
 module.exports = new Model();

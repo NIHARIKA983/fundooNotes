@@ -1443,3 +1443,11 @@
 {"level":"info","message":"Found label by id","timestamp":"2021-10-13T14:04:47.841Z"}
 {"level":"info","message":"Found all labels","timestamp":"2021-10-13T14:04:57.932Z"}
 {"level":"info","message":"Found label by id","timestamp":"2021-10-13T14:05:22.310Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-13T14:27:01.688Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T14:27:01.692Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-13T14:27:01.757Z"}
+{"level":"info","message":"label updated","timestamp":"2021-10-13T14:29:56.411Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-13T14:37:41.287Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T14:37:41.291Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-13T14:37:41.428Z"}
+{"level":"info","message":"label updated","timestamp":"2021-10-13T14:37:56.651Z"}
