@@ -10,5 +10,13 @@
             "title": "Agricluture ",
             "description": "coffee areca nut pepper "
         }
+    },
+    "notesCreatePos": {
+        "title": "Notes testing",
+        "description": "generate notes "
+    },
+    "notesCreateNegTitle": {
+        "title": "",
+        "description": "sample note create"
     }
 }

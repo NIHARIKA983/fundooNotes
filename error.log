@@ -444,3 +444,29 @@
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-12T17:31:21.879Z"}
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-12T17:43:20.638Z"}
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-12T18:04:58.585Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-12T18:23:22.801Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-12T18:29:31.470Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-12T18:29:34.650Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-12T18:30:10.493Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-12T18:30:12.811Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T01:43:37.663Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T10:57:01.286Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T11:05:57.136Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T11:08:56.389Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T11:10:03.909Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T11:10:28.810Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T11:12:11.270Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-13T11:12:14.029Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T11:44:26.257Z"}
+{"level":"error","message":"Label not created error occured","timestamp":"2021-10-13T11:54:38.846Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T12:00:54.087Z"}
+{"level":"error","message":"Label not created error occured","timestamp":"2021-10-13T12:00:59.986Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T12:02:48.982Z"}
+{"level":"error","message":"Label not created error occured","timestamp":"2021-10-13T12:03:29.458Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T12:31:44.379Z"}
+{"level":"error","message":"Invalid label body","timestamp":"2021-10-13T12:31:49.013Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T12:34:00.315Z"}
+{"level":"error","message":"Invalid label body","timestamp":"2021-10-13T12:34:04.639Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T12:37:17.544Z"}
+{"level":"error","message":"Label not created error occured","timestamp":"2021-10-13T12:37:23.131Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-13T12:38:58.513Z"}
