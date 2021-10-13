@@ -54,5 +54,31 @@ class Label {
         });
       }
     }
+
+    /**
+     * @description function written to get all labels
+     * @param {*} req
+     * @param {*} res
+     */
+
+    getLabel = (req, res) => {
+      const id = req.user.dataForToken.id;
+      labelService.getLabel(id, (resolve, reject) => {
+        if (resolve.length > 0) {
+          logger.info('Found all labels');
+          res.status(200).send({
+            message: 'labels retrieved',
+            success: true,
+            data: resolve
+          });
+        } else {
+          logger.error('Label Not found');
+          res.status(404).send({
+            message: 'Labels not found ',
+            success: false
+          });
+        }
+      });
+    }
 }
 module.exports = new Label();

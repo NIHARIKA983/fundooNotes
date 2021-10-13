@@ -29,4 +29,5 @@ module.exports = (app) => {
 
   // label CRUD api
   app.post('/createlabel', middleware.validateToken, label.createLabel);
+  app.get('/getlabels', middleware.validateToken, label.getLabel);
 };
