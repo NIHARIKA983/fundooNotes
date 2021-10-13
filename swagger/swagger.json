@@ -378,6 +378,127 @@
                 "400":{"description":"Invalid Token"}
               }
             }  
+        },
+        "/getlabels":{
+            "get":{
+              "tags":["get labels"],
+              "description":"Gets all labels",
+              "parameters":[
+                {
+                  "in":"header",
+                "name":"authorization",
+                "description":"Token for validation",
+                "schema":{
+                  "type":"string",
+                  "required":true
+                }
+                }
+              ],
+              "produces":["application/json"],
+              "responses":{
+                "200":{"description":"labels retrieved"},
+                "500":{"description":"Couldnt retrieve labels"}
+              }
+            }
+          },
+          "/getlabel/{id}":{
+            "get":{
+              "tags":["get label by id"],
+              "description":"Gets label by id",
+              "parameters":[
+                {
+                  "in":"header",
+                  "name":"authorization",
+                  "description":"Token for validation",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                  }
+                },
+                {
+                  "in":"path",
+                  "name":"id",
+                  "description":"Label id",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                  }
+                }
+              ],
+              "produces":["application/json"],
+              "responses":{
+                "200":{"description":"label Found"},
+                "500":{"description":"label not Found"},
+                "400":{"description":"Invalid Token"}
+              }
+            }
+          },
+          "/updatelabel/{id}":{
+            "put":{
+              "tags":["Update label"],
+              "description":"Updates label",
+              "parameters":[
+                {
+                  "in":"header",
+                  "name":"authorization",
+                  "description":"Token for validation",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                }
+              },
+              {
+                "in":"path",
+                "name":"id",
+                "description":"Label id",
+                "schema":{
+                  "type":"string",
+                  "required":true
+                }
+              },
+              {
+                "in":"body",
+                "name":"label",
+                "description":"Label to be updated",
+                  "schema":{"$ref":"#/definitions/label"}
+                }
+              ],
+              "produces":["application/json"],
+              "responses":{
+                "200":{"description":"label updated"},
+                "500":{"description":"Failed to update label"},
+                "400":{"description":"Invalid Token"}
+              }
+            }
+          },
+          "/deletelabel/{id}":{
+            "delete":{
+              "tags":["Delete Label"],
+              "description":"Deletes a label",
+              "parameters":[{
+                "in":"header",
+                  "name":"authorization",
+                  "description":"Token for validation",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                }
+              },{
+                "in":"path",
+                "name":"id",
+                "description":"Label id",
+                "schema":{
+                  "type":"string",
+                  "required":true
+                }
+              }],
+              "produces":["application/json"],
+              "responses":{
+                "200":{"description":"Deleted label"},
+                "500":{"description":"Failed to delete label"},
+                "400":{"description":"Invalid Token"}
+              }
+            }    
         }
         
     },
