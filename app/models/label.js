@@ -8,10 +8,6 @@ const mongoose = require('mongoose');
 const labelSchema = mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 
-  //   noteId: {
-  //     type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }]
-  //   },
-
   labelName: {
     type: String,
     required: true

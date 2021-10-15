@@ -1,0 +1,15 @@
+{
+    "label": {
+        "validToken": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTY2YzdiNDQxMTFmMTMxNDk2NDlmMmIiLCJmaXJzdE5hbWUiOiJQcmFudXBhIiwibGFzdE5hbWUiOiJMRCIsImVtYWlsIjoibmloYXJpa2Fnb3dkYUBnbWFpbC5jb20ifSwiaWF0IjoxNjM0MzA4MzkzfQ.MHbZzEpciZCVesuxcKqks8djeGqlWcBXczLNne9BSgU",
+        "invalidToken": "bearer eyJhbGciOR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiZW1haWwiOiJ2aXZlay5paXRkOTNAZ21haWwuY29tIn0sImlhdCI6MTYzMzU1NTAyOH0.wJqpcpyzvlQPT684BKIeup28MMdy8M37gRuWuU-RhTY",
+        "getlabelWithValidToken": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTY2YzdiNDQxMTFmMTMxNDk2NDlmMmIiLCJmaXJzdE5hbWUiOiJQcmFudXBhIiwibGFzdE5hbWUiOiJMRCIsImVtYWlsIjoibmloYXJpa2Fnb3dkYUBnbWFpbC5jb20ifSwiaWF0IjoxNjM0MzA4MzkzfQ.MHbZzEpciZCVesuxcKqks8djeGqlWcBXczLNne9BSgU",
+        "getlabelWithInValidToken": "bearer eyJ.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTU1ZTU1NWRkNjk3MmFjZThhNmU1MDkiLCJmaXJzdE5hbWUiOiJHYW5lc2giLCJsYXN0TmFtZSI6Imd2IiwiZW1haWwiOiJnYW5lc2hnYXZoYWQ5QGdtYWlsLmNvbSJ9LCJpYXQiOjE2MzM3NTAzOTh9.6V3rC5r0Jhr34iuBCEUIggc_OkmqYk14znDeJA6DpHg",
+        "EmptyToken":"",
+        "EmptyId":""
+    },
+    "updatelabel": {
+        "validData": {
+            "labelName":"Books"
+        }
+    }
+}
