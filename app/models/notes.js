@@ -8,6 +8,10 @@ const { logger } = require('../../logger/logger');
 const mongoose = require('mongoose');
 const noteSchema = mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+
+  labelId: {
+    type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'LabelRegister' }]
+  },
   title: {
     type: String
   },
@@ -101,6 +105,15 @@ class Model {
       return await NoteRegister.findOneAndDelete({ $and: [{ _id: id.noteId }, { userId: id.userId }] });
     } catch (err) {
       return err;
+    }
+  }
+
+  addLabelById = async (id) => {
+    try {
+      const data = await NoteRegister.findByIdAndUpdate(id.noteId, { $push: { labelId: id.labelId } });
+      console.log(data);
+    } catch (error) {
+      return error;
     }
   }
 }

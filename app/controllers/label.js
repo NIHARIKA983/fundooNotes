@@ -162,6 +162,15 @@ class Label {
     deleteLabelById = async (req, res) => {
       try {
         const id = { userId: req.user.dataForToken.id, labelId: req.params.id };
+        const deleteLabelValidation = validation.labeldeleteValidation.validate(id);
+        if (deleteLabelValidation.error) {
+          console.log(deleteLabelValidation.error);
+          return res.status(400).send({
+            success: false,
+            message: 'Wrong Input Validations',
+            data: deleteLabelValidation
+          });
+        }
         const data = await labelService.deleteLabelById(id);
         if (data.message) {
           return res.status(404).json({
@@ -180,6 +189,15 @@ class Label {
           success: false,
           data: err
         });
+      }
+    }
+
+    addNoteId = async (id, res) => {
+      try {
+        await labelService.addNoteId(id);
+        return;
+      } catch (err) {
+        return err;
       }
     }
 }

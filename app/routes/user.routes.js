@@ -33,4 +33,6 @@ module.exports = (app) => {
   app.get('/getlabel/:id', middleware.validateToken, label.getLabelById);
   app.put('/updatelabel/:id', middleware.validateToken, label.updateLabel);
   app.delete('/deletelabel/:id', middleware.validateToken, label.deleteLabelById);
+
+  app.post('/addlabel/:id', middleware.validateToken, noteController.addLabelById);
 };

@@ -8,6 +8,10 @@ const mongoose = require('mongoose');
 const labelSchema = mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 
+  noteId: {
+    type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'NoteRegister' }]
+  },
+
   labelName: {
     type: String,
     required: true
@@ -87,6 +91,15 @@ class Model {
     deleteLabelById = async (id) => {
       try {
         return await LabelRegister.findOneAndDelete({ $and: [{ _id: id.labelId }, { userId: id.userId }] });
+      } catch (err) {
+        return err;
+      }
+    }
+
+    async addNoteId (id) {
+      try {
+        const data = await LabelRegister.findByIdAndUpdate(id.labelId, { $push: { noteId: id.noteId } }, { new: true });
+        console.log(data);
       } catch (err) {
         return err;
       }

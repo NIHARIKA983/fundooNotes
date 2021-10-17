@@ -6,6 +6,7 @@
 const noteService = require('../service/notes');
 const { logger } = require('../../logger/logger');
 const validation = require('../utilities/validation.js');
+const labelController = require('../controllers/label');
 
 class Note {
   /**
@@ -219,6 +220,30 @@ class Note {
         message: 'Note not deleted',
         success: false,
         data: err
+      });
+    }
+  }
+
+  addLabelById = async (req, res) => {
+    try {
+      const id = {
+        noteId: req.params.id,
+        labelId: req.body.Id,
+        userId: req.user.dataForToken.id
+      };
+      console.log(id);
+      const labels = await noteService.addLabelById(id);
+      await labelController.addNoteId(id);
+      res.status(200).send({
+        message: 'Label added',
+        success: true,
+        data: labels
+      });
+    } catch (err) {
+      res.status(500).send({
+        message: 'Label wasnt added',
+        success: false,
+        error: err
       });
     }
   }

@@ -97,11 +97,16 @@ class Validation {
         validateLabel = Joi.object({
           labelName: Joi.string()
             .required()
-        })
+        });
 
          validateLabel = Joi.object({
            labelName: Joi.string()
              .required()
-         })
+         });
+
+         labeldeleteValidation = Joi.object({
+           userId: Joi.string().required(),
+           labelId: Joi.string().required()
+         });
 }
 module.exports = new Validation();

@@ -68,5 +68,14 @@ class Service {
       return err;
     }
   }
+
+  addLabelById = async (id) => {
+    try {
+      const data = await noteModel.addLabelById(id);
+      return data;
+    } catch (error) {
+      return error;
+    }
+  }
 }
 module.exports = new Service();
