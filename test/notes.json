@@ -18,5 +18,15 @@
     "notesCreateNegTitle": {
         "title": "",
         "description": "sample note create"
+    },
+    "addLebel": {
+        "validToken": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTU4YWQ4OTMxYWM5ZDE3Y2ZlZmMzY2UiLCJmaXJzdE5hbWUiOiJOaWhhcmlrYSIsImxhc3ROYW1lIjoiR293ZGEiLCJlbWFpbCI6Im5paGFyaWthZ293ZGExOTk2QGdtYWlsLmNvbSJ9LCJpYXQiOjE2MzM4OTM3MzN9.NbIIonAsk_o0ptn6Id4TtKPVCVslJJFkDsns1KnDwWo"
+    },
+
+    "addLabelBodyData": {
+        "Id": "6169916b1e16505796bc66cf"
+    },
+    "deleteLabelBodyData": {
+        "labelId": "6169916b1e16505796bc66cf"
     }
 }

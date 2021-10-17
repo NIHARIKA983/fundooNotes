@@ -1674,3 +1674,73 @@
 {"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-17T11:58:54.048Z"}
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T11:58:54.052Z"}
 {"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-17T11:58:54.124Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-17T12:54:07.646Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T12:54:07.651Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-17T12:54:07.925Z"}
+{"level":"info","message":"Label inserted","timestamp":"2021-10-17T12:54:08.224Z"}
+{"level":"error","message":"Invalid label body","timestamp":"2021-10-17T12:54:08.471Z"}
+{"level":"info","message":"Found all labels","timestamp":"2021-10-17T12:54:08.644Z"}
+{"level":"info","message":"label updated","timestamp":"2021-10-17T12:54:08.817Z"}
+{"level":"info","message":"Found label by id","timestamp":"2021-10-17T12:54:09.122Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-10-17T12:54:09.360Z"}
+{"level":"info","message":"Note Updated Successfully","timestamp":"2021-10-17T12:54:09.440Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-17T12:54:10.508Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-17T12:54:10.519Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-17T12:54:11.573Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-17T12:54:11.574Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-17T12:54:11.592Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":838,"level":"info","messageId":"<5ace5bfd-b1f2-a6cd-a488-d64f29d95d54@gmail.com>","messageSize":1030,"messageTime":1009,"rejected":[],"response":"250 2.0.0 OK  1634475254 o127sm10189892pfb.216 - gsmtp","timestamp":"2021-10-17T12:54:14.498Z"}
+{"accepted":["pranupa1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["pranupa1996@gmail.com"]},"envelopeTime":852,"level":"info","messageId":"<fa303a43-ba7c-75a1-620d-3d9f966e0ca3@gmail.com>","messageSize":1008,"messageTime":1132,"rejected":[],"response":"250 2.0.0 OK  1634475254 63sm10298904pfv.192 - gsmtp","timestamp":"2021-10-17T12:54:14.627Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-17T12:55:40.670Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T12:55:40.674Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-17T12:55:40.951Z"}
+{"level":"info","message":"Label inserted","timestamp":"2021-10-17T12:55:41.184Z"}
+{"level":"error","message":"Invalid label body","timestamp":"2021-10-17T12:55:41.280Z"}
+{"level":"info","message":"Found all labels","timestamp":"2021-10-17T12:55:41.384Z"}
+{"level":"info","message":"label updated","timestamp":"2021-10-17T12:55:41.546Z"}
+{"level":"info","message":"Found label by id","timestamp":"2021-10-17T12:55:41.727Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-10-17T12:55:41.833Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-10-17T12:55:41.924Z"}
+{"level":"info","message":"Note Updated Successfully","timestamp":"2021-10-17T12:55:42.009Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-17T12:55:43.042Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-17T12:55:43.050Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-17T12:55:43.700Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-17T12:55:43.701Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-17T12:55:43.731Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":774,"level":"info","messageId":"<84f88a8c-6565-35a2-1a93-22c3dc68c945@gmail.com>","messageSize":1030,"messageTime":689,"rejected":[],"response":"250 2.0.0 OK  1634475346 k22sm9952498pfi.149 - gsmtp","timestamp":"2021-10-17T12:55:46.125Z"}
+{"accepted":["pranupa1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["pranupa1996@gmail.com"]},"envelopeTime":773,"level":"info","messageId":"<6adc5096-d73d-d646-c27c-a1700caaab68@gmail.com>","messageSize":1008,"messageTime":790,"rejected":[],"response":"250 2.0.0 OK  1634475346 y3sm9584677pge.44 - gsmtp","timestamp":"2021-10-17T12:55:46.236Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-17T12:58:52.584Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T12:58:52.588Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-17T12:58:52.788Z"}
+{"level":"info","message":"Label inserted","timestamp":"2021-10-17T12:58:53.037Z"}
+{"level":"error","message":"Invalid label body","timestamp":"2021-10-17T12:58:53.134Z"}
+{"level":"info","message":"Found all labels","timestamp":"2021-10-17T12:58:53.301Z"}
+{"level":"info","message":"label updated","timestamp":"2021-10-17T12:58:53.380Z"}
+{"level":"info","message":"Found label by id","timestamp":"2021-10-17T12:58:53.530Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-10-17T12:58:53.593Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-10-17T12:58:53.660Z"}
+{"level":"info","message":"Note Updated Successfully","timestamp":"2021-10-17T12:58:53.726Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-17T12:58:54.637Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-17T12:58:54.645Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-17T12:58:55.175Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-17T12:58:55.176Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-17T12:58:55.196Z"}
+{"accepted":["pranupa1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["pranupa1996@gmail.com"]},"envelopeTime":755,"level":"info","messageId":"<b5c4337b-5c46-8624-5947-55af28eb145b@gmail.com>","messageSize":1008,"messageTime":643,"rejected":[],"response":"250 2.0.0 OK  1634475537 k13sm10397896pfc.197 - gsmtp","timestamp":"2021-10-17T12:58:57.636Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":786,"level":"info","messageId":"<cd39fc18-0884-45d1-4969-3f9b2b41944e@gmail.com>","messageSize":1030,"messageTime":739,"rejected":[],"response":"250 2.0.0 OK  1634475537 gf23sm10731390pjb.26 - gsmtp","timestamp":"2021-10-17T12:58:57.769Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-17T13:00:01.144Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T13:00:01.147Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-17T13:00:01.349Z"}
+{"level":"info","message":"Label inserted","timestamp":"2021-10-17T13:00:01.605Z"}
+{"level":"error","message":"Invalid label body","timestamp":"2021-10-17T13:00:01.696Z"}
+{"level":"info","message":"Found all labels","timestamp":"2021-10-17T13:00:01.777Z"}
+{"level":"info","message":"label updated","timestamp":"2021-10-17T13:00:01.866Z"}
+{"level":"info","message":"Found label by id","timestamp":"2021-10-17T13:00:02.015Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-10-17T13:00:02.166Z"}
+{"level":"info","message":"Note Updated Successfully","timestamp":"2021-10-17T13:00:02.224Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-17T13:00:03.179Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-17T13:00:03.188Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-17T13:00:03.700Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-17T13:00:03.701Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-17T13:00:03.720Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":762,"level":"info","messageId":"<6885d3ed-285e-3173-d94b-f26fc3d5786b@gmail.com>","messageSize":1030,"messageTime":592,"rejected":[],"response":"250 2.0.0 OK  1634475606 u2sm9915887pfi.120 - gsmtp","timestamp":"2021-10-17T13:00:06.117Z"}
+{"accepted":["pranupa1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["pranupa1996@gmail.com"]},"envelopeTime":779,"level":"info","messageId":"<c2c4020c-c775-b132-4138-c1eba895c716@gmail.com>","messageSize":1008,"messageTime":724,"rejected":[],"response":"250 2.0.0 OK  1634475606 q10sm9723143pgn.31 - gsmtp","timestamp":"2021-10-17T13:00:06.289Z"}

@@ -529,3 +529,15 @@
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T11:28:16.595Z"}
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T11:45:57.515Z"}
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T11:58:54.053Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T12:54:07.652Z"}
+{"level":"error","message":"Invalid label body","timestamp":"2021-10-17T12:54:08.472Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-17T12:54:11.593Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T12:55:40.674Z"}
+{"level":"error","message":"Invalid label body","timestamp":"2021-10-17T12:55:41.282Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-17T12:55:43.731Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T12:58:52.588Z"}
+{"level":"error","message":"Invalid label body","timestamp":"2021-10-17T12:58:53.135Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-17T12:58:55.196Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-17T13:00:01.147Z"}
+{"level":"error","message":"Invalid label body","timestamp":"2021-10-17T13:00:01.697Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-17T13:00:03.720Z"}

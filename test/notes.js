@@ -145,3 +145,37 @@ describe('Get notes by ID api', () => {
       });
   });
 });
+
+describe('Add label in notes api', () => {
+  it('givenPoperDetails_ShouldAddLabelInNote', (done) => {
+    const token = noteDB.addLebel.validToken;
+    const note = noteDB.addLabelBodyData;
+    console.log(note);
+    chai
+      .request(server)
+      .post('/addlabel/616584e253d5c4f5dece512a')
+      .set({ authorization: token })
+      .send(note)
+      .end((err, res) => {
+        res.should.have.status(200);
+        done();
+      });
+  });
+});
+
+describe('Delete label in notes api', () => {
+  it('givenPoperDetails_ShouldDeleteLabelInNote', (done) => {
+    const token = noteDB.addLebel.validToken;
+    const note = noteDB.deleteLabelBodyData;
+    console.log(note);
+    chai
+      .request(server)
+      .delete('/deleteLabelFromNote/616584e253d5c4f5dece512a')
+      .set({ authorization: token })
+      .send(note)
+      .end((err, res) => {
+        res.should.have.status(201);
+        done();
+      });
+  });
+});
