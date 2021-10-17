@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const noteSchema = mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 
-  labelId: {
+  labels: {
     type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'LabelRegister' }]
   },
   title: {
@@ -120,7 +120,7 @@ class Model {
   deleteLabel = async (id) => {
     try {
       return await NoteRegister.findByIdAndUpdate(id.noteId,
-        { $pull: { labelId: id.labelId } }, { multi: true });
+        { $pull: { labelId: id.labelId } }, { new: true });
     } catch (error) {
       return error;
     }
