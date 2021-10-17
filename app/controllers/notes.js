@@ -228,7 +228,7 @@ class Note {
     try {
       const id = {
         noteId: req.params.id,
-        labelId: req.body.Id,
+        labelId: req.body.labelId,
         userId: req.user.dataForToken.id
       };
       console.log(id);
@@ -244,6 +244,27 @@ class Note {
         message: 'Label wasnt added',
         success: false,
         error: err
+      });
+    }
+  }
+
+  deleteLabel = async (req, res) => {
+    try {
+      const id = {
+        labelId: req.body.labelId,
+        noteId: req.params.id,
+        userId: req.user.dataForToken.id
+      };
+      await noteService.deleteLabel(id);
+      res.status(201).send({
+        message: 'Label deleted',
+        success: true
+      });
+    } catch (error) {
+      res.status(500).send({
+        message: 'Label wasnt deleted',
+        success: false,
+        error: error
       });
     }
   }
