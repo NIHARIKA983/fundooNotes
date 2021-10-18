@@ -7,6 +7,7 @@
 const validation = require('../utilities/validation.js');
 const { logger } = require('../../logger/logger');
 const labelService = require('../service/label');
+const redisjs = require('../middleware/redis');
 class Label {
     /**
      * @description function writt
@@ -66,6 +67,7 @@ class Label {
       labelService.getLabel(id, (resolve, reject) => {
         if (resolve.length > 0) {
           logger.info('Found all labels');
+          redisjs.setData('getLabel', 60, JSON.stringify(resolve));
           res.status(200).send({
             message: 'labels retrieved',
             success: true,

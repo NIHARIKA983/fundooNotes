@@ -146,6 +146,7 @@ describe('Get notes by ID api', () => {
   });
 });
 
+// add lebel in note and add note in label
 describe('Add label in notes api', () => {
   it('givenPoperDetails_ShouldAddLabelInNote', (done) => {
     const token = noteDB.addLebel.validToken;
@@ -163,6 +164,7 @@ describe('Add label in notes api', () => {
   });
 });
 
+// Delete Label in Note
 describe('Delete label in notes api', () => {
   it('givenPoperDetails_ShouldDeleteLabelInNote', (done) => {
     const token = noteDB.addLebel.validToken;

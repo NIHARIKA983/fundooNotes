@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const noteSchema = mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 
-  labels: {
+  labelId: {
     type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'LabelRegister' }]
   },
   title: {
@@ -108,6 +108,13 @@ class Model {
     }
   }
 
+  /**
+     * @description function written to add label to note
+     * @param {*} a valid noteId is expected
+     * @param {*} a valid labelId is expected
+     * @returns
+     */
+
   addLabelById = async (id) => {
     try {
       const data = await NoteRegister.findByIdAndUpdate(id.noteId, { $push: { labelId: id.labelId } });
@@ -116,6 +123,13 @@ class Model {
       return error;
     }
   }
+
+  /**
+ * @description function written to remove label from note
+ * @param {*} a valid noteId is expected
+ * @param {*} a valid labelId is expected
+ * @returns
+ */
 
   deleteLabel = async (id) => {
     try {

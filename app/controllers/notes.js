@@ -7,6 +7,7 @@ const noteService = require('../service/notes');
 const { logger } = require('../../logger/logger');
 const validation = require('../utilities/validation.js');
 const labelController = require('../controllers/label');
+const redisjs = require('../middleware/redis');
 
 class Note {
   /**
@@ -79,6 +80,7 @@ class Note {
       }
       noteService.getNote(id, resolve, reject);
       function resolve (data) {
+        redisjs.setData('getAll', 60, JSON.stringify(data));
         logger.info('Get All Notes successfully');
         return res.status(201).json({
           message: 'Get All Notes successfully',
@@ -121,6 +123,7 @@ class Note {
           success: false
         });
       }
+      redisjs.setData('getNotesById', 60, JSON.stringify(data));
       return res.status(200).json({
         message: 'Note retrieved succesfully',
         success: true,
@@ -224,6 +227,12 @@ class Note {
     }
   }
 
+  /**
+     * @description function written to add label to note
+     * @param {*} a valid noteId is expected
+     * @param {*} a valid labelId is expecte
+     */
+
   addLabelById = async (req, res) => {
     try {
       const id = {
@@ -234,7 +243,7 @@ class Note {
       console.log(id);
       const labels = await noteService.addLabelById(id);
       await labelController.addNoteId(id);
-      res.status(200).send({
+      res.status(200).json({
         message: 'Label added',
         success: true,
         data: labels
@@ -247,6 +256,13 @@ class Note {
       });
     }
   }
+
+  /**
+ * @description function written to delete label from note
+ * @param {*} a valid noteId is expected
+ * @param {*} a valid labelId is expected
+ * @returns
+ */
 
   deleteLabel = async (req, res) => {
     try {
