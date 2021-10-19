@@ -28,7 +28,7 @@ class Helper {
       email: data.email
     };
     console.log(dataForToken);
-    return jwt.sign({ dataForToken }, process.env.JWT_SECRET);
+    return jwt.sign({ dataForToken }, process.env.JWT_SECRET, { expiresIn: '24H' });
   }
 
   getEmailFromToken = (token) => {

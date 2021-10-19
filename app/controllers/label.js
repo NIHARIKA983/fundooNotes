@@ -67,7 +67,6 @@ class Label {
       labelService.getLabel(id, (resolve, reject) => {
         if (resolve.length > 0) {
           logger.info('Found all labels');
-          redisjs.setData('getLabel', 60, JSON.stringify(resolve));
           res.status(200).send({
             message: 'labels retrieved',
             success: true,
@@ -90,24 +89,30 @@ class Label {
      * @param {*} res
      */
 
-    getLabelById = (req, res) => {
-      const id = req.params.id;
-      labelService.getLabelById(id, (resolve, reject) => {
-        if (resolve) {
-          logger.info('Found label by id');
-          res.status(200).send({
-            message: 'label Found',
-            success: true,
-            data: resolve
-          });
-        } else {
-          logger.error('Label not found by id');
-          res.status(500).send({
-            message: 'label not Found',
+    labelGetById = async (req, res) => {
+      try {
+        const id = { userId: req.user.dataForToken.id, noteId: req.params.id };
+        console.log(`Test: ${req.user.dataForToken.id} and ${req.params.id}`);
+        const data = await labelService.labelGetById(id);
+        if (data.message) {
+          return res.status(404).json({
+            message: 'label not found',
             success: false
           });
         }
-      });
+        redisjs.setData('getLabelById', 60, JSON.stringify(data));
+        return res.status(200).json({
+          message: 'label retrieved succesfully',
+          success: true,
+          data: data
+        });
+      } catch (err) {
+        return res.status(500).json({
+          message: 'label not updated',
+          success: false,
+          data: err
+        });
+      }
     }
 
     /**

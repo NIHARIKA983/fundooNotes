@@ -23,19 +23,19 @@ module.exports = (app) => {
 
   // notes CRUD api
   app.post('/createnotes', middleware.validateToken, noteController.createNote);
-  app.get('/getnotes', middleware.validateToken, redis.redis_port, noteController.getNote);
+  app.get('/getnotes', middleware.validateToken, noteController.getNote);
   app.get('/getnotes/:id', middleware.validateToken, redis.redis_NOteById, noteController.getNoteById);
   app.put('/updatenotes/:id', middleware.validateToken, noteController.updateNoteById);
   app.delete('/deletenotes/:id', middleware.validateToken, noteController.deleteNoteById);
 
   // label CRUD api
   app.post('/createlabel', middleware.validateToken, label.createLabel);
-  app.get('/getlabels', middleware.validateToken, redis.redis_Label, label.getLabel);
-  app.get('/getlabel/:id', middleware.validateToken, label.getLabelById);
+  app.get('/getlabels', middleware.validateToken, label.getLabel);
+  app.get('/getlabel/:id', middleware.validateToken, redis.redis_LabelById, label.labelGetById);
   app.put('/updatelabel/:id', middleware.validateToken, label.updateLabel);
   app.delete('/deletelabel/:id', middleware.validateToken, label.deleteLabelById);
 
   // label to note api
   app.post('/addlabel/:id', middleware.validateToken, noteController.addLabelById);
-  app.post('/deleteLabelFromNote/:id', middleware.validateToken, noteController.deleteLabel);
+  app.delete('/deleteLabelFromNote/:id', middleware.validateToken, noteController.deleteLabel);
 };

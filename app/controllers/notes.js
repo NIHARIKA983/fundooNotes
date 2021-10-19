@@ -80,7 +80,6 @@ class Note {
       }
       noteService.getNote(id, resolve, reject);
       function resolve (data) {
-        redisjs.setData('getAll', 60, JSON.stringify(data));
         logger.info('Get All Notes successfully');
         return res.status(201).json({
           message: 'Get All Notes successfully',
@@ -164,6 +163,7 @@ class Note {
       }
       noteService.updateNoteById(updateNote, resolve, reject);
       function resolve (data) {
+        redisjs.clearCache('getNotesById');
         logger.info('Note Updated Successfully');
         return res.status(201).send({
           message: 'Note Updated Successfully',
