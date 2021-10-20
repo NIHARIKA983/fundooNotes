@@ -6,6 +6,7 @@
  */
 const { logger } = require('../../logger/logger');
 const noteModel = require('../models/notes');
+// const nodemailer = require('../Utilities/nodeemailer.js');
 class Service {
   /**
      * @description this function is written to send data models
@@ -96,6 +97,14 @@ class Service {
     try {
       const data = await noteModel.deleteLabel(id);
       return data;
+    } catch (error) {
+      return error;
+    }
+  }
+
+  async noteCollaborator (notesId, emailData) {
+    try {
+      return await noteModel.noteCollaborator(notesId, emailData);
     } catch (error) {
       return error;
     }

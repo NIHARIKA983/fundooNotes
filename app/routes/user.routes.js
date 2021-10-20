@@ -28,6 +28,8 @@ module.exports = (app) => {
   app.put('/updatenotes/:id', middleware.validateToken, noteController.updateNoteById);
   app.delete('/deletenotes/:id', middleware.validateToken, noteController.deleteNoteById);
 
+  app.post('/notecollaborator/:id', middleware.validateToken, noteController.noteCollaborator);
+
   // label CRUD api
   app.post('/createlabel', middleware.validateToken, label.createLabel);
   app.get('/getlabels', middleware.validateToken, label.getLabel);

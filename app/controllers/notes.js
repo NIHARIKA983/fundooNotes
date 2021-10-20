@@ -284,5 +284,28 @@ class Note {
       });
     }
   }
+
+  async noteCollaborator (req, res) {
+    try {
+      const id = req.params.id;
+      const emailData = {
+        userId: req.user.dataForToken.id,
+        collabUser: req.body.collabUser
+      };
+      console.log(id, emailData);
+      const addEmail = await noteService.noteCollaborator(id, emailData);
+      res.send({
+        success: true,
+        message: 'Email Added Into Note',
+        data: addEmail
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(500).send({
+        success: false,
+        message: 'Some error while adding Email to notes'
+      });
+    }
+  }
 }
 module.exports = new Note();

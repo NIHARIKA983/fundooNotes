@@ -1,3 +1,4 @@
+/* eslint-disable node/no-callback-literal */
 /**
  * @module       Models
  * @file         notes.js
@@ -12,6 +13,10 @@ const noteSchema = mongoose.Schema({
   labelId: {
     type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'LabelRegister' }]
   },
+  collaborator: {
+    type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
+    unique: true
+  },
   title: {
     type: String
   },
@@ -19,6 +24,11 @@ const noteSchema = mongoose.Schema({
     type: String,
     required: true,
     minlength: 2
+  },
+  email: {
+    type: [String],
+    required: true,
+    unique: true
   }
 }, {
   // generates the time stamp the data is been added
@@ -135,6 +145,16 @@ class Model {
     try {
       return await NoteRegister.findByIdAndUpdate(id.noteId,
         { $pull: { labelId: id.labelId } }, { new: true });
+    } catch (error) {
+      return error;
+    }
+  }
+
+  async noteCollaborator (id, emailData) {
+    try {
+      const data = await NoteRegister.findByIdAndUpdate(id, { $push: { collaborator: emailData.collabUser } }, { new: true });
+      console.log(data);
+      return data;
     } catch (error) {
       return error;
     }
