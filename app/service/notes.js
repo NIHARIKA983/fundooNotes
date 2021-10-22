@@ -102,12 +102,31 @@ class Service {
     }
   }
 
+  /**
+ * @description function written to Collaborate the user to the note
+ * @param {*} a valid noteId is expected
+ * @param {*} a valid emailData is expected
+ * @returns
+ */
+
   async noteCollaborator (notesId, emailData) {
     try {
-      return await noteModel.noteCollaborator(notesId, emailData);
+      const data = await noteModel.noteCollaborator(notesId, emailData);
+      console.log('NoteService' + data);
+      return data;
     } catch (error) {
       return error;
     }
   }
+
+   addCollaborator = async (id, collabUser) => {
+     const data = await noteModel.getByIdForColl(id);
+     for (let i = 0; i < data.collaborator.length; i++) {
+       if (JSON.stringify(data.collaborator[i]) === JSON.stringify(collabUser.collabUser)) {
+         return true;
+       }
+     }
+     return false;
+   }
 }
 module.exports = new Service();

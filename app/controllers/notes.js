@@ -8,6 +8,8 @@ const { logger } = require('../../logger/logger');
 const validation = require('../utilities/validation.js');
 const labelController = require('../controllers/label');
 const redisjs = require('../middleware/redis');
+// const userModel = require('../models/user.model');
+const UserModel = require('../models/user.model');
 
 class Note {
   /**
@@ -285,27 +287,52 @@ class Note {
     }
   }
 
-  async noteCollaborator (req, res) {
+  /**
+ * @description function written to Collaborate the user to the note
+ * @param {*} a valid id is expected
+ * @param {*} a valid collabUser is expected
+ * @returns
+ */
+
+  noteCollaborator = async (req, res) => {
     try {
-      const id = req.params.id;
-      const emailData = {
-        userId: req.user.dataForToken.id,
+      const id = {
+        noteId: req.params.id,
+        userId: req.user.dataForToken.id
+      };
+      const collabUser = {
         collabUser: req.body.collabUser
       };
-      console.log(id, emailData);
-      const addEmail = await noteService.noteCollaborator(id, emailData);
-      res.send({
-        success: true,
-        message: 'Email Added Into Note',
-        data: addEmail
-      });
+
+      const Collaborate = await UserModel.userExists(req.body);
+      if (Collaborate !== null) {
+        const addUser = await noteService.addCollaborator(id, collabUser);
+        if (addUser) {
+          return res.status(400).send({
+            message: 'Collaborator already exits',
+            success: false
+          });
+        } else {
+          await noteService.noteCollaborator(id, collabUser);
+          return res.status(200).json({
+            message: 'Note is Shared with Collaborator succesfully',
+            success: true
+          });
+        }
+      } else {
+        res.status(404).send({
+          message: 'Invalid collaborator',
+          success: false
+        });
+      }
     } catch (error) {
-      console.log(error);
-      res.status(500).send({
+      return res.status(500).json({
+        message: 'Internal Error',
         success: false,
-        message: 'Some error while adding Email to notes'
+        data: error
       });
     }
   }
 }
+
 module.exports = new Note();

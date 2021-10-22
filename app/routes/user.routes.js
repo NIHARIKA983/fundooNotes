@@ -28,6 +28,7 @@ module.exports = (app) => {
   app.put('/updatenotes/:id', middleware.validateToken, noteController.updateNoteById);
   app.delete('/deletenotes/:id', middleware.validateToken, noteController.deleteNoteById);
 
+  // Collaborate user with note
   app.post('/notecollaborator/:id', middleware.validateToken, noteController.noteCollaborator);
 
   // label CRUD api

@@ -150,14 +150,29 @@ class Model {
     }
   }
 
-  async noteCollaborator (id, emailData) {
+  /**
+ * @description function written to Collaborate the user to the note
+ * @param {*} a valid id is expected
+ * @param {*} a valid collabUser is expected
+ * @returns
+ */
+
+  async noteCollaborator (id, collabUser) {
     try {
-      const data = await NoteRegister.findByIdAndUpdate(id, { $push: { collaborator: emailData.collabUser } }, { new: true });
-      console.log(data);
+      const data = await NoteRegister.findOneAndUpdate(
+        { $and: [{ _id: id.noteId }, { userId: id.userId }] },
+        { $push: { collaborator: collabUser.collabUser } },
+        { new: true }
+      );
       return data;
     } catch (error) {
       return error;
     }
   }
+
+  getByIdForColl = async (id) => {
+    const data = await NoteRegister.findOne({ _id: id.noteId });
+    return data;
+  };
 }
 module.exports = new Model();

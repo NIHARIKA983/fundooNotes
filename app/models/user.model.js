@@ -35,7 +35,7 @@ const userSchema = mongoose.Schema({
 });
 
 const User = mongoose.model('User', userSchema);
-module.exports = User;
+// module.exports = User;
 
 class UserModel {
   /**
@@ -128,6 +128,11 @@ class UserModel {
            return callback(null, data);
          }
        });
+     };
+
+     userExists = async (collabUser) => {
+       const data = await User.findOne({ _id: collabUser.collabUser });
+       return data;
      };
 }
 module.exports = new UserModel();

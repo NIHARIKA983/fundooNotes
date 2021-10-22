@@ -15,17 +15,17 @@ chai.should();
 describe('registartion', () => {
   it('givenRegistrationDetails_whenProper_shouldSaveInDB', (done) => {
     // const registartionDetails = registrationData.user.registration;
-    const register = {
+    const registerfaker = {
       firstName: faker.name.findName(),
       lastName: faker.name.lastName(),
       email: faker.internet.email(),
-      password: faker.internet.password()
+      password: 'niharika123$&'
     };
-    console.log(register);
+    // console.log(register);
     chai
       .request(server)
       .post('/register')
-      .send(register)
+      .send(registerfaker)
       .end((err, res) => {
         if (err) {
           return done(err);
