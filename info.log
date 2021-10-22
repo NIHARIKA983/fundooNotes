@@ -2263,3 +2263,12 @@
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-22T06:55:05.029Z"}
 {"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-22T06:55:05.241Z"}
 {"level":"info","message":"Get All Notes successfully","timestamp":"2021-10-22T06:58:05.075Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-22T07:18:57.131Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-22T07:18:57.135Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-22T07:18:57.395Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-22T07:39:40.962Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-22T07:39:40.966Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-22T07:39:41.119Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-22T07:42:16.460Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-22T07:42:16.464Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-22T07:42:16.541Z"}

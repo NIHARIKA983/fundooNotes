@@ -599,6 +599,44 @@
                     }
                 }
             }
+        },
+        "/notecollaborator/{id}":{
+            "post":{
+              "tags":["Note Collaborator"],
+              "description":"Collaborator Note to the User",
+              "parameters":[
+                {
+                  "in":"header",
+                  "name":"authorization",
+                  "description":"Token for validation",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                }
+              },
+              {
+                "in":"path",
+                "name":"id",
+                "description":"Note id",
+                "schema":{
+                  "type":"string",
+                  "required":true
+                }
+              },
+              {
+                "in":"body",
+                "name":"Collaborate",
+                "description":"Note is Collaborated to the User",
+                  "schema":{"$ref":"#/definitions/collaborator"}
+                }
+              ],
+              "produces":["application/json"],
+              "responses":{
+                "200":{"description":"collaborator updated"},
+                "500":{"description":"Failed to update user"},
+                "400":{"description":"Invalid Token"}
+              }
+            }
         }
     },
 
@@ -717,7 +755,14 @@
             "example": {
                 "labelId": "Write a labelId here....."
             }
+        },
+        "collaborator": {
+            "type": "object",
+            "properties": {
+                "collabUser": {
+                    "type": "string"
+                }
+            }
         }
-
     }
 }
