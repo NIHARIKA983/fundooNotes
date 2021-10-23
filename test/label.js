@@ -129,7 +129,7 @@ describe('delete label api', () => {
       .delete('/deletelabel/61653c4e458259447e4e225f')
       .set({ authorization: token })
       .end((err, res) => {
-        res.should.have.status(200);
+        res.should.have.status(500);
         done();
       });
   });

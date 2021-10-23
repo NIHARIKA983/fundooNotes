@@ -11,6 +11,9 @@
             "description": "coffee areca nut pepper "
         }
     },
+    "notesDelPos": {
+        "isDeleted": true
+    },
     "notesCreatePos": {
         "title": "Notes testing",
         "description": "generate notes "
@@ -28,5 +31,12 @@
     },
     "deleteLabelBodyData": {
         "labelId": "6169916b1e16505796bc66cf"
-    }
+    },
+    "addUser": {
+        "validToken": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTY2YzdiNDQxMTFmMTMxNDk2NDlmMmIiLCJmaXJzdE5hbWUiOiJQcmFudXBhIiwibGFzdE5hbWUiOiJMRCIsImVtYWlsIjoibmloYXJpa2Fnb3dkYUBnbWFpbC5jb20ifSwiaWF0IjoxNjM0OTU1MjYzLCJleHAiOjE2MzUwNDE2NjN9.rIAK-k1BNkRzh-z1ucuLje-URPxFjfFY-Ik8HICJW0M"
+    },
+    "NoteCollaborator": {
+        "Id": "6158ad8931ac9d17cfefc3ce"
+    },
+    "DeleteById":"61653c4e458259447e4e225f"
 }

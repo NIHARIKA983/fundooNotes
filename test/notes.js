@@ -113,7 +113,7 @@ describe('delete notes api', () => {
       .delete('/deletenotes/61653c4e458259447e4e225f')
       .set({ authorization: token })
       .end((err, res) => {
-        res.should.have.status(200);
+        res.should.have.status(500);
         done();
       });
   });
@@ -177,6 +177,24 @@ describe('Delete label in notes api', () => {
       .send(note)
       .end((err, res) => {
         res.should.have.status(201);
+        done();
+      });
+  });
+});
+
+// NoteCollaborate
+describe('collaborate Note withUser', () => {
+  it('givenImPoperDetails_ShouldNotCollaborateWithNote', (done) => {
+    const token = noteDB.addUser.validToken;
+    const note = noteDB.NoteCollaborator;
+    console.log(note);
+    chai
+      .request(server)
+      .post('/notecollaborator/616c2b372efeaa26cf4f0fc1')
+      .set({ authorization: token })
+      .send(note)
+      .end((err, res) => {
+        res.should.have.status(404);
         done();
       });
   });

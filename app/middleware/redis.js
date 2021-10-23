@@ -11,7 +11,8 @@ class Redis {
      * @param {*} if there is no data function calls for next function
      */
    redis_NOteById = (req, res, next) => {
-     client.get('getNotesById', (error, redis_data) => {
+     const noteId = req.params.id;
+     client.get(noteId, (error, redis_data) => {
        if (error) {
          logger.error(error);
          throw error;
@@ -36,7 +37,8 @@ class Redis {
     */
 
    redis_LabelById = (req, res, next) => {
-     client.get('getLabelById', (error, redis_data) => {
+     const labelId = req.params.id;
+     client.get(labelId, (error, redis_data) => {
        if (error) {
          logger.error(error);
          throw error;

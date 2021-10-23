@@ -10,6 +10,9 @@ const middleware = require('../utilities/helper.js');
 const noteController = require('../controllers/notes');
 const label = require('../controllers/label');
 const redis = require('../middleware/redis');
+// const passport = require('../utilities/auth.js');
+const passport = require('passport');
+require('../utilities/auth');
 
 module.exports = (app) => {
   // api for registration
@@ -41,4 +44,7 @@ module.exports = (app) => {
   // label to note api
   app.post('/addlabel/:id', middleware.validateToken, noteController.addLabelById);
   app.delete('/deleteLabelFromNote/:id', middleware.validateToken, noteController.deleteLabel);
+
+  app.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+  app.get('/auth/google/callback', passport.authenticate('google'));
 };

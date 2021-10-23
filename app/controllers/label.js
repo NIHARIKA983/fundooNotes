@@ -144,6 +144,7 @@ class Label {
               success: false
             });
           }
+          redisjs.clearCache('label');
           logger.info('label updated');
           return res.status(200).send({
             message: 'label updated',

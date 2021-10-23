@@ -32,8 +32,11 @@
     "mongoose": "^6.0.5",
     "nodemailer": "^6.6.5",
     "nodemon": "^2.0.13",
+    "passport": "^0.5.0",
+    "passport-google-oauth2": "^0.2.0",
     "redis": "^3.1.2",
     "redis-server": "^1.2.2",
+    "save": "^2.4.0",
     "swagger-jsdoc": "^6.1.0",
     "swagger-ui-express": "^4.1.6",
     "winston": "^3.3.3"

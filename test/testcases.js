@@ -19,7 +19,7 @@ describe('registartion', () => {
       firstName: faker.name.findName(),
       lastName: faker.name.lastName(),
       email: faker.internet.email(),
-      password: 'niharika123$&'
+      password: faker.internet.password()
     };
     // console.log(register);
     chai

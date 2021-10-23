@@ -106,6 +106,7 @@ class Note {
 
   getNoteById = async (req, res) => {
     try {
+      const noteId = req.params.id;
       const id = { userId: req.user.dataForToken.id, noteId: req.params.id };
 
       const getNoteValidation = validation.notesdeleteValidation.validate(id);
@@ -124,7 +125,7 @@ class Note {
           success: false
         });
       }
-      redisjs.setData('getNotesById', 60, JSON.stringify(data));
+      redisjs.setData(noteId, 60, JSON.stringify(data));
       return res.status(200).json({
         message: 'Note retrieved succesfully',
         success: true,
@@ -148,6 +149,7 @@ class Note {
      */
   updateNoteById = (req, res) => {
     try {
+      const noteId = req.params.id;
       const updateNote = {
         id: req.params.id,
         userId: req.user.dataForToken.id,
@@ -165,7 +167,7 @@ class Note {
       }
       noteService.updateNoteById(updateNote, resolve, reject);
       function resolve (data) {
-        redisjs.clearCache('getNotesById');
+        redisjs.clearCache(noteId);
         logger.info('Note Updated Successfully');
         return res.status(201).send({
           message: 'Note Updated Successfully',
