@@ -45,6 +45,8 @@ module.exports = (app) => {
   app.post('/addlabel/:id', middleware.validateToken, noteController.addLabelById);
   app.delete('/deleteLabelFromNote/:id', middleware.validateToken, noteController.deleteLabel);
 
-  app.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
-  app.get('/auth/google/callback', passport.authenticate('google'));
+  // Social login
+  app.get('/failed', (req, res) => res.send('You Have Failed To Login...!!!'));
+  app.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+  app.get('/auth/google/callback', passport.authenticate('google', { failureRedirect: '/failed' }), middleware.tokenAuthentication, controller.socialLogin);
 };

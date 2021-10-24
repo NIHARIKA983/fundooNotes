@@ -84,5 +84,16 @@ class UserService {
        }
      });
    }
+
+   socialLogin (googleInfo) {
+     return new Promise((resolve, reject) => {
+       userModel.socialLogin(googleInfo).then((data) => {
+         const token = utilities.token(data);
+         resolve(token);
+       }).catch((err) => {
+         reject(err);
+       });
+     });
+   };
 }
 module.exports = new UserService();

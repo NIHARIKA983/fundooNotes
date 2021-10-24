@@ -1,29 +1,24 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
 
+passport.serializeUser((user, done) => {
+  done(null, user);
+});
+
+passport.deserializeUser((user, done) => {
+  done(null, user);
+});
+
 passport.use(new GoogleStrategy({
   clientID: process.env.GOOGLE_CLIENT_ID,
   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: 'http://localhost:3000/auth/google/callback',
-  passReqToCallback: true
+  callbackURL: 'http://localhost:3000/auth/google/callback'
 },
-// (accessToken, refreshToken, profile, done) => {
-//   console.log(accessToken);
-//   console.log(refreshToken);
-//   console.log(profile);
-// }
-function (request, accessToken, refreshToken, profile, done) {
-//   User.findOrCreate({ googleId: profile.id }, function (err, user) {
-  // eslint-disable-next-line no-undef
-  return done(err, profile);
-//   });
-}
-));
+(accessToken, refreshToken, profile, done) => {
+  const dataOne = {
+    profile,
+    token: accessToken
+  };
 
-passport.serializeUser(function (user, done) {
-  done(null, user);
-});
-
-passport.deserializeUser(function (user, done) {
-  done(null, user);
-});
+  return done(null, dataOne);
+}));

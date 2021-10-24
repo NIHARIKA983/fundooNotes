@@ -4,10 +4,13 @@ const bodyParser = require('body-parser');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger/swagger.json');
 const { logger } = require('./logger/logger');
+const passport = require('passport');
 
 const port = process.env.PORT;
 // create express app
 const app = express();
+
+app.use(require('cookie-parser')());
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
@@ -25,6 +28,14 @@ dbConfig.database();
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome to the FundooNotesApp.' });
 });
+require('./app/utilities/auth');
+// app.use(require('express-session')({
+//   secret: 'keyboard cat',
+//   resave: true,
+//   saveUninitialized: true
+// }));
+app.use(passport.initialize());
+// app.use(passport.session());
 
 // ........
 

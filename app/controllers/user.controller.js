@@ -1,3 +1,4 @@
+/* eslint-disable node/handle-callback-err */
 /**
  * @description   : Taking the request from the client and gives the response
  * @author        : Niharika
@@ -199,6 +200,33 @@ class Controller {
            data: null
          });
        }
+     };
+
+     socialLogin = (req, res) => {
+       const googleProfile = req.user.profile;
+       const googleInfo = {
+         firstName: googleProfile.name.givenName,
+         lastName: googleProfile.name.familyName,
+         email: googleProfile.emails[0].value,
+         password: null,
+         googleId: googleProfile.id,
+         googleLogin: true
+       };
+       userService.socialLogin(googleInfo).then((data) => {
+         return res
+           .status(200)
+           .send({
+             success: true,
+             message: 'Login Successfully...!',
+             token: data
+           });
+       })
+         .catch((error) => {
+           return res.status(500).send({
+             success: false,
+             message: "Login Failed...!'"
+           });
+         });
      };
 }
 

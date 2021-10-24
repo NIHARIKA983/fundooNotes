@@ -12,6 +12,7 @@ const { logger } = require('../../logger/logger');
 const bcrypt = require('bcrypt');
 
 const userSchema = mongoose.Schema({
+  googleId: { type: String },
   firstName: {
     type: String,
     required: true
@@ -28,7 +29,8 @@ const userSchema = mongoose.Schema({
   password: {
     type: String,
     required: true
-  }
+  },
+  googleLogin: { type: Boolean }
 },
 {
   timestamps: true
@@ -133,6 +135,31 @@ class UserModel {
      userExists = async (collabUser) => {
        const data = await User.findOne({ _id: collabUser.collabUser });
        return data;
+     };
+
+     socialLogin = async (userData) => {
+       return await User.findOne({ email: userData.email }).then(data => {
+         if (data !== null) {
+           return data;
+         } else {
+           const data = new User({
+             firstName: userData.firstName,
+             lastName: userData.lastName,
+             email: userData.email,
+             password: userData.password,
+             googleId: userData.googleId,
+             googleLogin: userData.googleLogin
+           });
+           const datauser = async () => {
+             await data.save();
+           };
+           datauser();
+           console.log(data);
+           return data;
+         }
+       }).catch(err => {
+         return ('Something went wrong', err);
+       });
      };
 }
 module.exports = new UserModel();
