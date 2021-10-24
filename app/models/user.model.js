@@ -137,6 +137,13 @@ class UserModel {
        return data;
      };
 
+     /**
+   * @description mongooose method for reseting the password
+   * @param {*} userData has email of user to find user and if user exist return data
+   *        else register user using mongoose save function and then return data to service
+   *        to generate token
+   * @returns
+   */
      socialLogin = async (userData) => {
        return await User.findOne({ email: userData.email }).then(data => {
          if (data !== null) {

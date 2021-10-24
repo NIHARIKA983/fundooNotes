@@ -85,6 +85,11 @@ class UserService {
      });
    }
 
+   /**
+   * @description it acts as a middleware between controller and model for socail login using google
+   * @param {*} googleInfo shoul have user info from google
+   * @returns token with help of jwt
+   */
    socialLogin (googleInfo) {
      return new Promise((resolve, reject) => {
        userModel.socialLogin(googleInfo).then((data) => {

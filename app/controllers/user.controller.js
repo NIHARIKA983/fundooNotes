@@ -202,6 +202,12 @@ class Controller {
        }
      };
 
+     /**
+   * description socialLogin controller function for login user using google
+   * @param {*} req req shoul have req.user
+   * @param {*} res should have user log in succefully
+   * @returns
+   */
      socialLogin = (req, res) => {
        const googleProfile = req.user.profile;
        const googleInfo = {

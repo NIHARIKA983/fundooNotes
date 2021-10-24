@@ -29,13 +29,13 @@ app.get('/', (req, res) => {
   res.json({ message: 'Welcome to the FundooNotesApp.' });
 });
 require('./app/utilities/auth');
-// app.use(require('express-session')({
-//   secret: 'keyboard cat',
-//   resave: true,
-//   saveUninitialized: true
-// }));
+app.use(require('express-session')({
+  secret: 'keyboard cat',
+  resave: true,
+  saveUninitialized: true
+}));
 app.use(passport.initialize());
-// app.use(passport.session());
+app.use(passport.session());
 
 // ........
 
