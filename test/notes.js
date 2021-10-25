@@ -194,7 +194,7 @@ describe('collaborate Note withUser', () => {
       .set({ authorization: token })
       .send(note)
       .end((err, res) => {
-        res.should.have.status(404);
+        res.should.have.status(400);
         done();
       });
   });
