@@ -3353,3 +3353,42 @@
 {"level":"info","message":"getting upadated password in data","timestamp":"2021-10-25T16:59:25.757Z"}
 {"level":"info","message":"Password reset succesfully","timestamp":"2021-10-25T16:59:25.758Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-10-25T16:59:25.780Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-25T17:03:38.612Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-25T17:03:38.615Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-25T17:03:38.738Z"}
+{"level":"info","message":"User registered","timestamp":"2021-10-25T17:03:39.462Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-25T17:03:40.175Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-25T17:03:40.188Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-25T17:03:40.819Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-25T17:03:40.820Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-25T17:03:40.847Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-26T02:01:47.550Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-26T02:01:47.645Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-26T02:01:48.806Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-26T02:04:45.440Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-26T02:04:45.443Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-26T02:04:45.547Z"}
+{"level":"info","message":"User registered","timestamp":"2021-10-26T02:04:47.725Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-26T02:04:49.412Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-26T02:04:49.537Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-26T02:04:50.939Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-26T02:04:50.940Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-26T02:04:51.467Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-10-26T03:15:40.193Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-10-26T03:15:40.197Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-10-26T03:15:40.545Z"}
+{"level":"info","message":"Label inserted","timestamp":"2021-10-26T03:15:42.428Z"}
+{"level":"error","message":"Invalid label body","timestamp":"2021-10-26T03:15:42.979Z"}
+{"level":"info","message":"Found all labels","timestamp":"2021-10-26T03:15:43.154Z"}
+{"level":"info","message":"label updated","timestamp":"2021-10-26T03:15:43.546Z"}
+{"level":"info","message":"Cache cleared","timestamp":"2021-10-26T03:15:44.187Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-10-26T03:15:45.862Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-10-26T03:15:46.859Z"}
+{"level":"info","message":"Note Updated Successfully","timestamp":"2021-10-26T03:15:48.082Z"}
+{"level":"info","message":"Cache cleared","timestamp":"2021-10-26T03:15:48.089Z"}
+{"level":"info","message":"User registered","timestamp":"2021-10-26T03:15:50.216Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-10-26T03:15:51.397Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-10-26T03:15:51.415Z"}
+{"level":"info","message":"getting upadated password in data","timestamp":"2021-10-26T03:15:52.172Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-10-26T03:15:52.173Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-10-26T03:15:52.191Z"}

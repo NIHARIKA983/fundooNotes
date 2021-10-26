@@ -4,7 +4,7 @@
   "description": "Never miss a thing in Life. Take notes quickly. Organize and keep track of all your notes.",
   "main": "server.js",
   "scripts": {
-    "test": "nyc mocha ./test/testcases.js --exit --inspect=0.0.0.0:9229 --timeout 120000",
+    "test": "nyc mocha ./test --exit --inspect=0.0.0.0:9229 --timeout 120000",
     "lint": "eslint ."
   },
   "keywords": [
