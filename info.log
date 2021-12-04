@@ -3392,3 +3392,115 @@
 {"level":"info","message":"getting upadated password in data","timestamp":"2021-10-26T03:15:52.172Z"}
 {"level":"info","message":"Password reset succesfully","timestamp":"2021-10-26T03:15:52.173Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-10-26T03:15:52.191Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-02T10:03:55.794Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-02T10:03:55.796Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-02T10:03:55.852Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-02T10:55:08.035Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-02T10:55:08.037Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-02T10:55:08.101Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-02T14:44:22.683Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-02T14:44:22.684Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-02T14:44:22.969Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-02T14:54:00.561Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-02T14:54:00.563Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-02T14:54:00.600Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-02T14:55:03.738Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-02T15:20:59.321Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-02T15:20:59.325Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-02T15:20:59.416Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-02T15:21:25.762Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-03T18:12:04.662Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-03T18:12:04.666Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-03T18:12:04.758Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-03T18:12:58.668Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T07:20:03.343Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:20:03.348Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T07:20:03.879Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T07:25:25.559Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T07:27:29.056Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:27:29.059Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T07:27:29.269Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T07:28:24.235Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:28:24.237Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T07:28:24.285Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T07:29:38.874Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T07:38:53.073Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:38:53.081Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T07:38:53.140Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T07:38:59.510Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T07:38:59.607Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T07:40:35.172Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:40:35.174Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T07:40:35.221Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T07:40:39.275Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T07:40:39.322Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T07:46:23.729Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:46:23.732Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T07:46:23.794Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T07:48:55.096Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T07:54:25.257Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:54:25.259Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T07:54:25.295Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T07:54:32.757Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T07:58:08.327Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:58:08.333Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T07:58:08.409Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T07:58:29.357Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T08:00:47.402Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:00:47.407Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T08:00:47.504Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T08:00:55.634Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T08:07:31.190Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:07:31.192Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T08:07:31.239Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T08:07:35.941Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T08:08:25.767Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:08:25.769Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T08:08:25.815Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T08:08:30.214Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T08:12:00.149Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:12:00.152Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T08:12:00.211Z"}
+{"code":"EAUTH","command":"AUTH PLAIN","level":"error","response":"534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbs\n534-5.7.14 iHrvgHcpVb92wISMOKVnrW5diSa7zU8dUnHVbTSbH3hHUhrj2t9t7eu7VjwJv2X9DASxU\n534-5.7.14 lqNYQIleMv6V3yHd4LB-JuOjvq2B8qTavCYX3By9kJ7WyG3WR61I_qUcxFme5Yut>\n534-5.7.14 Please log in via your web browser and then try again.\n534-5.7.14  Learn more at\n534 5.7.14  https://support.google.com/mail/answer/78754 h22sm5550062pfv.25 - gsmtp","responseCode":534,"timestamp":"2021-12-04T08:12:05.723Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T08:13:07.610Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:13:07.612Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T08:13:07.661Z"}
+{"accepted":["niharikagowda1996@gmail.com"],"envelope":{"from":"niharikagowda1996@gmail.com","to":["niharikagowda1996@gmail.com"]},"envelopeTime":861,"level":"info","messageId":"<96499c77-97c2-d118-3cbb-313e2a52cdc0@gmail.com>","messageSize":1050,"messageTime":1300,"rejected":[],"response":"250 2.0.0 OK  1638605596 mq14sm7735971pjb.54 - gsmtp","timestamp":"2021-12-04T08:13:15.969Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T08:14:49.311Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:14:49.313Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T08:14:49.365Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T08:15:28.893Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T08:15:28.986Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T08:16:45.462Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T08:16:45.472Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T08:18:35.885Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:18:35.888Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T08:18:35.949Z"}
+{"level":"info","message":"data found in database","timestamp":"2021-12-04T08:18:45.811Z"}
+{"_original":{"email":"niharikagowda1996@gmail.com","password":"Tiharika96$"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"Tiharika96$"},"message":"\"password\" with value \"Tiharika96$\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-12-04T08:19:59.815Z"}
+{"level":"info","message":"data found in database","timestamp":"2021-12-04T08:19:59.832Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-04T08:20:00.024Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T08:21:00.662Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:21:00.665Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T08:21:00.730Z"}
+{"level":"info","message":"data found in database","timestamp":"2021-12-04T08:21:03.961Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-04T08:21:04.132Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-04T08:21:04.141Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T08:21:39.072Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T08:21:39.122Z"}
+{"level":"info","message":"data found in database but not verified","timestamp":"2021-12-04T08:21:57.659Z"}
+{"level":"error","message":"not verified mail","timestamp":"2021-12-04T08:21:57.660Z"}
+{"level":"error","message":"not verified mail","timestamp":"2021-12-04T08:21:57.660Z"}
+{"level":"info","message":"data found in database","timestamp":"2021-12-04T08:22:18.210Z"}
+{"level":"info","message":"data found in database","timestamp":"2021-12-04T08:22:26.409Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-04T08:22:26.534Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-04T08:22:26.539Z"}
+{"level":"info","message":"Server is listening on port : 3000","timestamp":"2021-12-04T08:24:43.993Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:24:43.995Z"}
+{"level":"info","message":"SucceSssfully connected to the database","timestamp":"2021-12-04T08:24:44.041Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T08:25:05.937Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-04T08:25:05.997Z"}
+{"level":"info","message":"data found in database","timestamp":"2021-12-04T08:25:18.027Z"}
+{"level":"info","message":"data found in database","timestamp":"2021-12-04T08:25:28.476Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-04T08:25:28.597Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-04T08:25:28.603Z"}

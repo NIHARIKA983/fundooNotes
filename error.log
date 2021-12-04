@@ -915,3 +915,36 @@
 {"level":"error","message":" Something is wrong ","timestamp":"2021-10-26T03:15:40.198Z"}
 {"level":"error","message":"Invalid label body","timestamp":"2021-10-26T03:15:42.980Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-10-26T03:15:52.192Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-02T10:03:55.796Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-02T10:55:08.037Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-02T14:44:22.684Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-02T14:54:00.563Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-02T15:20:59.325Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-03T18:12:04.667Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:20:03.348Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:27:29.059Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:28:24.237Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:38:53.081Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:40:35.174Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:46:23.732Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T07:48:55.096Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:54:25.259Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T07:54:32.758Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T07:58:08.334Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T07:58:29.358Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:00:47.407Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T08:00:55.634Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:07:31.192Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T08:07:35.942Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:08:25.770Z"}
+{"code":"ESOCKET","command":"CONN","level":"error","timestamp":"2021-12-04T08:08:30.215Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:12:00.152Z"}
+{"code":"EAUTH","command":"AUTH PLAIN","level":"error","response":"534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbs\n534-5.7.14 iHrvgHcpVb92wISMOKVnrW5diSa7zU8dUnHVbTSbH3hHUhrj2t9t7eu7VjwJv2X9DASxU\n534-5.7.14 lqNYQIleMv6V3yHd4LB-JuOjvq2B8qTavCYX3By9kJ7WyG3WR61I_qUcxFme5Yut>\n534-5.7.14 Please log in via your web browser and then try again.\n534-5.7.14  Learn more at\n534 5.7.14  https://support.google.com/mail/answer/78754 h22sm5550062pfv.25 - gsmtp","responseCode":534,"timestamp":"2021-12-04T08:12:05.724Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:13:07.612Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:14:49.313Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:18:35.888Z"}
+{"_original":{"email":"niharikagowda1996@gmail.com","password":"Tiharika96$"},"details":[{"context":{"key":"password","label":"password","regex":{},"value":"Tiharika96$"},"message":"\"password\" with value \"Tiharika96$\" fails to match the required pattern: /[A-Za-z0-9]{4,}[$&+,:;=?@#|<>.^*()%!-]{2,}/","path":["password"],"type":"string.pattern.base"}],"level":"error","timestamp":"2021-12-04T08:19:59.815Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:21:00.666Z"}
+{"level":"error","message":"not verified mail","timestamp":"2021-12-04T08:21:57.660Z"}
+{"level":"error","message":"not verified mail","timestamp":"2021-12-04T08:21:57.661Z"}
+{"level":"error","message":" Something is wrong ","timestamp":"2021-12-04T08:24:43.996Z"}

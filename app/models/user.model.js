@@ -30,8 +30,13 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  googleLogin: { type: Boolean }
+  googleLogin: { type: Boolean },
+  verified: {
+    type: Boolean,
+    default: false
+  }
 },
+
 {
   timestamps: true
 });
@@ -74,6 +79,21 @@ class UserModel {
        }
      };
 
+     confirmRegister = (data, callback) => {
+      console.log("con mod 78: ",data.firstName);
+      User.findOneAndUpdate({ email: data.email },{
+        verified: true
+        }, (error, data) => {
+        if (error) {
+          logger.error('data not found in database');
+          return callback(error, null);
+        } else {
+          logger.info('data found in database');
+          return callback(null, data);
+        }
+      });
+    }
+
      /**
       * @description login User from the database
       * @param loginInfo
@@ -81,20 +101,25 @@ class UserModel {
       */
 
       loginModel = (loginInfo, callback) => {
-        try {
           User.findOne({ email: loginInfo.email }, (error, data) => {
             if (error) {
+              logger.error('data not found in database');
               return callback(error, null);
-            } else if (!data) {
-              return callback('Invalid email', null);
             } else {
-              return callback(null, data);
-            }
-          });
-        } catch (error) {
-          callback('Internal error', null);
+              console.log("104: verified: ", data.verified);
+
+           if(data.verified == true){
+           logger.info('data found in database');
+           return callback(null, data);
+          } else {
+          logger.info('data found in database but not verified');
+          return callback('not verified mail', null);
+         }
+
         }
-      }
+       });
+      };
+
 
      /**
      * @description mongoose function for forgot password

@@ -71,6 +71,39 @@ class Helper {
       return res.status(400).send({ success: false, message: 'Failed To Set Google Token...!' });
     }
   };
+  jwtTokenGenerateforConfirm = (payload, secretkey, callback) => {
+    jwt.sign({email: payload.email}, secretkey, {expiresIn: '500h'}, (err, token) =>{
+        if(err){ return callback("token not generated", null);}
+        else {return callback (null, token);}
+    });
+  }
+
+  sendWelcomeMail = (data) => {
+    try {
+    let transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL, // generated ethereal user
+        pass: process.env.PASSWORD, // generated ethereal password
+      },
+    });
+
+    // send mail with defined transport object
+    let info = transporter.sendMail({
+      from: '"Fundoo Notes" <no-reply@fundoonotes.com>', // sender address
+      to: data.email, // list of receivers
+      subject: "Welcome - Fundoo notes account", // Subject line
+      text: `Hello ${data.firstName}.`, // plain text body
+      html: `<b>Hello ${data.firstName} Welcome - Fundoo notes. your account Has been created successfully</b>`, // html body
+    });
+    console.log("Message sent: %s", info.messageId);
+    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+
+    // Preview only available when sending through an Ethereal account
+    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+  } catch {}
+  }
+
 }
 
 module.exports = new Helper();

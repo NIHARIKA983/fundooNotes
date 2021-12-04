@@ -11,8 +11,12 @@ const bcrypt = require('bcryptjs');
 const utilities = require('../utilities/helper.js');
 const { logger } = require('../../logger/logger');
 const nodemailer = require('../Utilities/nodeemailer.js');
+const rabit = require('../utilities/rabitmq');
+const jwt = require('jsonwebtoken');
 // const { validate } = require('../models/user.model.js');
-// const helper = require('../utilities/helper.js');
+const helper = require('../utilities/helper.js');
+const sendLinkMail = require('../utilities/nodeemailer');
+
 
 class UserService {
   /**
@@ -25,10 +29,52 @@ class UserService {
         if (err) {
           callback(err, null);
         } else {
-          callback(null, data);
-        }
-      });
-    };
+         // Send Welcome Mail to User on his Mail
+        helper.sendWelcomeMail(user);
+
+        const secretkey = process.env.SECRET_KEY_FOR_CONFIRM;
+        helper.jwtTokenGenerateforConfirm(data, secretkey, (err, token) =>{
+          if(token){
+            console.log("service forget id and token : ",data.id," ",token);
+            // Send mail
+            rabit.sender(data,data.email);
+            sendLinkMail.sendConfirmMail(token,data);
+            return callback(null, token);
+          }
+          else {
+            return callback(err, null);
+          }
+        });
+
+        return callback(null, data);
+      }
+    });
+  };
+
+  confirmRegister = (data, callback) => {
+    console.log("con 44: ",data.token)
+    const decode = jwt.verify(data.token, process.env.SECRET_KEY_FOR_CONFIRM);
+    if(decode){
+      console.log("con :: 47: ",decode.email);
+
+      rabit.receiver(decode.email).then((val)=>{
+
+        console.log("rabit serv: ",val);
+        userModel.confirmRegister(JSON.parse(val), (error, data) => {
+          if (data) {
+            return callback(null, data);
+          } else {
+            return callback(error, null);
+          }
+        })
+        }).catch(()=>{console.log('failed');})
+
+      // rabit.receiver(decode.email).then((rdata)=>{
+
+
+      // }).catch(()=>{console.log("error");})
+    }
+  }
 
     /**
      * @description sends the data to loginApi in the controller

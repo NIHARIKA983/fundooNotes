@@ -17,6 +17,8 @@ require('../utilities/auth');
 module.exports = (app) => {
   // api for registration
   app.post('/register', controller.register);
+  // Confirm Register
+  app.get('/confirmregister/:token', controller.confirmRegister);
   // api for login
   app.post('/login', controller.login);
   // api for forgot pasword

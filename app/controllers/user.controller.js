@@ -61,6 +61,36 @@ class Controller {
         });
       }
     }
+
+    confirmRegister = (req, res) => {
+      try {
+        const data = {
+          token: req.params.token
+        };
+        console.log("con 65: ",req.params.token)
+      userService.confirmRegister(data, (error, data) => {
+        console.log("con 67: ")
+        if (error) {
+            return res.json({
+            success: false,
+            message: "error",
+          });
+        } else {
+          return res.json({
+            success: true,
+            message: "Email Successfully Verified",
+            data: data
+          });
+        }
+      })
+      } catch {
+        return res.json({
+          success: false,
+          data: null,
+          message: "server-error",
+        });
+      }
+    }
     /**
      * @description retrieving login info from user by email and password
      * @method login
@@ -73,14 +103,14 @@ class Controller {
            email: req.body.email,
            password: req.body.password
          };
-         const loginValidation = validation.authLogin.validate(userLoginInfo);
-         if (loginValidation.error) {
-           logger.error(loginValidation.error);
-           res.status(400).send({
-             success: false,
-             message: loginValidation.error.message
-           });
-         }
+        //  const loginValidation = validation.authLogin.validate(userLoginInfo);
+        //  if (loginValidation.error) {
+        //    logger.error(loginValidation.error);
+        //    res.status(400).send({
+        //      success: false,
+        //      message: loginValidation.error.message
+        //    });
+        //  }
          userService.userLogin(userLoginInfo, (error, token) => {
            if (error) {
              logger.error(error);
